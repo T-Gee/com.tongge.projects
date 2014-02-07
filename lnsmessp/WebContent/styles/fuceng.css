@@ -1,0 +1,36 @@
+body{ padding:0; margin:0;}
+.DialogFuceng{ width:401px; height:200px; overflow:hidden; padding:30px; position:absolute; z-index:999; background:#FFF; left:0; top:333px; display:none;}
+.DialogFuceng .DialogContent{ width:100%; height:100%; border:1px solid #6c6c6c; position:relative;}
+h3.DialogTitle{ width:374px; height:36px; overflow:hidden; margin:0 auto; background:#d2d2d2; color:#353535; margin-top:19px; line-height:36px; font-size:12px; text-align:center;}
+.clearBoth{ clear:both; height:0; font-size:0; overflow:hidden;}
+.DialogContent p.DialogLeft{ width:130px; height:110px; overflow:hidden; float:left; padding-left:20px; text-align:center; margin-top:20px;}
+.DialogContent p.DialogRight{ width:228px; height:80px; overflow:hidden; float:left; text-align:center; color:#333333; margin-top:20px; font-size:12px; line-height:20px; padding-top:30px;}
+.DialogContent .DialogClose{ width:15px; height:14px; overflow:hidden; background:url(../spcImages/close.gif) no-repeat left top; position:absolute; right:-20px; top:-20px; cursor:pointer;}
+.DialogContent p.Num1{ background:url(../spcImages/rignt.gif) no-repeat 25px top;}
+.DialogContent p.Num2{ background:url(../spcImages/wrong.gif) no-repeat 35px 10px;}
+#AllOfBg{  background:url(../spcImages/overlay.png) repeat left top; width:100%; height:100%; position:absolute; z-index:99; filter:Alpha(opacity=60); opacity:0.6; left:0; top:0; display:none;  }
+#AllOfIframe{ background:url(../spcImages/overlay.png) repeat left top; width:100%; height:999px; position:absolute; z-index:90; filter:Alpha(opacity=60); opacity:0.6; left:0; top:0; display:none;  }
+.xcloseall{ width:12px; height:12px; overflow:hidden; position:absolute; top:0; right:0; background:url(../spcImages/closexx.jpg) no-repeat left top; cursor:pointer; z-index:999999999}
+#iframeDialogCenter{ width:600px; height:450px; overflow:hidden; position:absolute; left:0; top:0; display:none; z-index:90; background:#FFF;}
+
+#newDialogSpc{ width:300px; height:200px; overflow:hidden; border:1px solid #99bbe8; position:absolute; left:0; top:0; background:url(../spcImages/bgSpc.gif) repeat left top; display:none; z-index:999;}
+#newDialogSpc p b{ display:block; width:250px; height:25px; overflow:hidden; line-height:30px; font-size:12px; font-family:"宋体",Arial; color:#15428b; float:left; text-indent:24px;}
+#newDialogSpc p{ padding:0; margin:0;}
+#newDialogSpc p a{ width:16px; height:25px; overflow:hidden; float:right; background:url(../spcImages/closeSpc.gif) no-repeat left top; margin-top:5px;  margin-right:10px;}
+.newDialogCotent{ background:#FFF; width:247px; height:121px; overflow:hidden; margin:0 auto; border:1px solid #99bbe8;padding:20px; font-size:12px; line-height:20px;}
+
+#newDialogSpcLine{ width:250px; height:100px; overflow:hidden; border:1px solid #99bbe8; position:absolute;  background:url(../spcImages/bgSpc.gif) repeat left top; display:none;  z-index:999;}
+#newDialogSpcLine p b{ display:block; width:220px; height:20px; overflow:hidden; line-height:30px; font-size:12px; font-family:"宋体",Arial; color:#15428b; float:left; text-indent:14px;}
+#newDialogSpcLine p{ padding:0; margin:0;}
+#newDialogSpcLine p a{ width:16px; height:20px; overflow:hidden; float:right; background:url(../spcImages/closeSpc.gif) no-repeat left top; margin-top:5px;  margin-right:10px;}
+.newDialogCotentLine{ background:#FFF; width:218px; height:48px; overflow:hidden; margin:0 auto; border:1px solid #99bbe8;padding:10px; font-size:12px;}
+
+#adBoxLineOn,#adBoxLineOnSpc{ width:100px; height:auto; overflow-x:hidden; position:absolute;  z-index:80; top:280px;}
+#adBoxLineOn{left:10px;}
+#adBoxLineOnSpc{ right:0;}
+#adBoxLineOn p,#adBoxLineOnSpc p{ padding:0; margin:0;}
+#adBoxLineOn p a,#adBoxLineOnSpc p a{width:100px; height:14px; display:block; background:url(../spcImages/adclose.gif) no-repeat left top;}
+
+#mobileWarpBox{ padding:10px; position:absolute; left:0; top:0; background:url(../spcImages/overlay.png) repeat left top; z-index:99; display:none; filter:Alpha(opacity=80); opacity:0.8;}
+.mobileContent{ position:relative;  background:#FFF;}
+.closeDialogButton{ width:10px; height:10px; overflow:hidden; background:url(../spcImages/closecc.png) no-repeat left top; position:absolute; right:-10px;_right:0; top:-10px; cursor:pointer;}
