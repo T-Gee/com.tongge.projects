@@ -6,7 +6,6 @@ import java.util.Map;
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 
 import com.tongge.lnsmessp.action.BaseAction;
@@ -15,7 +14,6 @@ import com.tongge.lnsmessp.action.LoginAction;
 /**
  * Servlet implementation class SpringBeanFactory
  */
-@WebServlet("/SpringBeanFactory")
 public class SpringBeanFactory extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
