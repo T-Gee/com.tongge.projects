@@ -2,20 +2,24 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <div class="right_channel">
 
-  <div class="right_channel_top"></div>
-  <!--begin right_search-->
+<!--   <div class="right_channel_top"></div> -->
+  <!--begin right_search -->
 
-  <div class="right_search">
-    <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 15px;"><img
-      src="<%=path%>/images/x_100.png"></a> <a href="http://www.bdasme.org/login.jspx"
-      style="display: block; margin: 15px;"><img src="<%=path%>/images/x_101.png"></a> <a
-      href="http://www.bdasme.org/login.jspx" style="display: block; margin: 10px 15px;"><img
-      src="<%=path%>/images/x_102.png"></a>
+<!--   <div class="right_search"> -->
+<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 15px;"> -->
+<%--       <img src="<%=imagePath%>/x_100.png"> --%>
+<!--     </a> -->
+<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 15px;"> -->
+<%--       <img src="<%=imagePath%>/x_101.png"> --%>
+<!--     </a> -->
+<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 10px 15px;"> -->
+<%--       <img src="<%=imagePath%>/x_102.png"> --%>
+<!--     </a> -->
 
-  </div>
-  <!-----end right_search---->
-  <div class="clear"></div>
-  <div class="right_channel_bottom"></div>
+<!--   </div> -->
+  <!-----end right_search-- -->
+<!--   <div class="clear"></div> -->
+<!--   <div class="right_channel_bottom"></div> -->
 
 </div>
 <!--end right_channel-->
@@ -26,15 +30,16 @@
   <div class="right_channel_top"></div>
   <div class="newList1">
     <div class="newsTitle1">
-      <a href="http://www.bdasme.org/zxzxtzgg/index.jhtml" class="spc" xtab="201">通知公告</a> <a
-        href="http://www.bdasme.org/zxzxzxkx/index.jhtml" xtab="202">中心快讯</a> <a
-        href="http://www.bdasme.org/zxzxqydt/index.jhtml" style="border-right: 0;" xtab="203">企业动态</a>
+      <a href="http://www.bdasme.org/zxzxtzgg/index.jhtml" class="spc" xtab="201">通知公告</a>
+      <a href="http://www.bdasme.org/zxzxzxkx/index.jhtml" xtab="202">中心快讯</a>
+      <a href="http://www.bdasme.org/zxzxqydt/index.jhtml" style="border-right: 0;" xtab="203">企业动态</a>
       <div class="clear"></div>
     </div>
     <ul id="201" class="new007">
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/4101.jhtml" title="关于开展第六届“博大贡献奖”评选活动的通知 "
-        style="color: #000; font-weight: bold; font-size: 13px;">关于开展第六届“博大贡献奖”...<img
-          src="<%=path%>/images/new.gif"></a></li>
+          style="color: #000; font-weight: bold; font-size: 13px;">
+          关于开展第六届“博大贡献奖”...<img src="<%=imagePath%>/new.gif">
+        </a></li>
 
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/4002.jhtml" title=" 国经普办字〔2013〕8号关于共同做好第三次全国经济普查单位核查工作的通知">
           国经普办字〔2013〕8号关于共...</a></li>
@@ -44,26 +49,27 @@
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/3964.jhtml" title="国发〔2012〕60号国务院关于开展第三次全国经济普查的通知">国发〔2012〕60号国务院关于开...</a></li>
 
       <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxtzgg/index.jhtml" class="more"
-        target="_blank">更多...</a></li>
+          target="_blank">更多...</a></li>
     </ul>
     <ul id="202" style="display: none;" class="new007">
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/3221.jhtml" title="高新技术企业知识产权、财务税收系列活动助推开发区小巨人培育工程"
-        style="color: #000; font-weight: bold; font-size: 13px;">高新技术企业知识产权、财务税...<img
-          src="<%=path%>/images/new.gif"></a></li>
+          style="color: #000; font-weight: bold; font-size: 13px;">
+          高新技术企业知识产权、财务税...<img src="<%=imagePath%>/new.gif">
+        </a></li>
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/3101.jhtml" title="中小企业服务大厅举办第一期主题日咨询活动">中小企业服务大厅举办第一期主...</a></li>
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/2682.jhtml"
-        title="“创新·服务”开拓中小企业发展新路——“2012新区中小企业CEO论坛”将于本月14日启幕">“创新·服务”开拓中小企业发...</a></li>
+          title="“创新·服务”开拓中小企业发展新路——“2012新区中小企业CEO论坛”将于本月14日启幕">“创新·服务”开拓中小企业发...</a></li>
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/2444.jhtml" title="中小企业融资系列培训">中小企业融资系列培训</a></li>
       <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxzxkx/index.jhtml" class="more"
-        target="_blank">更多...</a></li>
+          target="_blank">更多...</a></li>
     </ul>
     <ul id="203" style="display: none;" class="new007">
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3666.jhtml" title="酒仙网销售业绩同比增三倍">酒仙网销售业绩同比增三倍</a></li>
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3665.jhtml" title="创盈光电入围第五批国家节能服务公司备案名单">创盈光电入围第五批国家节能服...</a></li>
       <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3664.jhtml" title="中韩合资新能源车电池生产线有望落户开发区">中韩合资新能源车电池生产线有...</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/1071.jhtml" title="“绿色北京－节能减排全民行动”启动暨第三届零碳音乐季开幕">“绿色北京－节能减排全民行动...</a></li>
+      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/1071.jhtml" title="“绿色XXX－节能减排全民行动”启动暨第三届零碳音乐季开幕">“绿色XXX－节能减排全民行动...</a></li>
       <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxqydt/index.jhtml" class="more"
-        target="_blank">更多...</a></li>
+          target="_blank">更多...</a></li>
     </ul>
   </div>
   <div class="right_channel_bottom"></div>
@@ -75,8 +81,9 @@
 
   <div class="right_channel_top"></div>
   <div class="active">
-    <a href="http://www.bdasme.org/jchdzxhd/2361.jhtml"><img src="<%=path%>/images/12143700yw6w.jpg"
-      style="width: 245px; height: 121px; margin-left: 12px;"></a>
+    <a href="http://www.bdasme.org/jchdzxhd/2361.jhtml">
+      <img src="<%=imagePath%>/12143700yw6w.jpg" style="width: 245px; height: 121px; margin-left: 12px;">
+    </a>
     <div class="clear"></div>
     <script type="text/javascript">
                      $(function(){
@@ -197,7 +204,7 @@
         ,['2012-09-20', '/jchdzxhd/2314.jhtml', '《小企业会计准则》第四期专题培训']
         ,['2012-08-28', '/jchdzxhd/1990.jhtml', '新区多家明星企业参展中国生物产业大会']
         ,['2012-08-02', '/jchdzxhd/1989.jhtml', '京交会--“服务贸易：新视野、新机遇、新发展”']
-        ,['2012-05-10', '/jchdzxhd/1988.jhtml', '2012年北京经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展']
+        ,['2012-05-10', '/jchdzxhd/1988.jhtml', '2012年XXX经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展']
       ];
       
             var cale = new Calendar("idCalendar", {
@@ -404,7 +411,7 @@
             <ul>
               <li><b>《小企业会计准则》第四期专题培训</b></li>
               <li>时 间：2012-09-20 08:30:00</li>
-              <li>地 点：北京亦庄生物医药园3层多功能厅</li>
+              <li>地 点：XXX亦庄生物医药园3层多功能厅</li>
               <li>联系电话：67857682</li>
               <li>会务热线：67857682</li>
             </ul>
@@ -424,7 +431,7 @@
             <ul>
               <li><b>京交会--“服务贸易：新视野、新机遇、新发展”</b></li>
               <li>时 间：2012-08-02 13:54:26</li>
-              <li>地 点：北京</li>
+              <li>地 点：XXX</li>
               <li>联系电话：</li>
               <li>会务热线：</li>
             </ul>
@@ -432,7 +439,7 @@
           <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
           <a href="http://www.bdasme.org/jchdzxhd/1988.jhtml" target="_blank">
             <ul>
-              <li><b>2012年北京经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
+              <li><b>2012年XXX经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
               <li>时 间：2012-05-10 09:00:00</li>
               <li>地 点：博大大厦A301会议室</li>
               <li>联系电话：67857682</li>
@@ -580,7 +587,7 @@
             <ul>
               <li><b>《小企业会计准则》第四期专题培训</b></li>
               <li>时 间：2012-09-20 08:30:00</li>
-              <li>地 点：北京亦庄生物医药园3层多功能厅</li>
+              <li>地 点：XXX亦庄生物医药园3层多功能厅</li>
               <li>联系电话：67857682</li>
               <li>会务热线：67857682</li>
             </ul>
@@ -600,7 +607,7 @@
             <ul>
               <li><b>京交会--“服务贸易：新视野、新机遇、新发展”</b></li>
               <li>时 间：2012-08-02 13:54:26</li>
-              <li>地 点：北京</li>
+              <li>地 点：XXX</li>
               <li>联系电话：</li>
               <li>会务热线：</li>
             </ul>
@@ -608,7 +615,7 @@
           <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
           <a href="http://www.bdasme.org/jchdzxhd/1988.jhtml" target="_blank">
             <ul>
-              <li><b>2012年北京经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
+              <li><b>2012年XXX经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
               <li>时 间：2012-05-10 09:00:00</li>
               <li>地 点：博大大厦A301会议室</li>
               <li>联系电话：67857682</li>
@@ -639,7 +646,7 @@
     <p href="#">热点调查</p>
     <div class="clear"></div>
     <div class="writing">
-      <img src="<%=path%>/images/text.png" width="73" height="70">
+      <img src="<%=imagePath%>/text.png" width="73" height="70">
     </div>
     <div class="report">
       您的企业迫切需要解决的问题？<br>
@@ -667,15 +674,15 @@
     <select style="width: 180px; float: right; margin-top: 5px;"
       onchange="if(this.value!=&#39;&#39;) { location.href=(this.value)}else{return false;}">
       <option value=" http://www.companychina.org/">中国企业协会</option>
-      <option value="http://www.bjsme.gov.cn/">北京中小企业网</option>
+      <option value="http://www.bjsme.gov.cn/">XXX中小企业网</option>
       <option value="http://www.bda.gov.cn">开发区管委会</option>
       <option value="http://www.miit.gov.cn/">中华人民共和国工业和信息化部</option>
-      <option value="http://www.bda.gov.cn">北京经济技术开发区</option>
+      <option value="http://www.bda.gov.cn">XXX经济技术开发区</option>
       <option value="http://www.zgc.gov.cn/">中关村国家自主创新示范区</option>
-      <option value="http://www.beijingit.gov.cn/">北京市经济和信息化委员会</option>
-      <option value="http://www.bjkw.gov.cn/n8785584/index.html">北京市科委</option>
-      <option value="http://www.bjpc.gov.cn/">北京市发展和改革委员会</option>
-      <option value="http://www.beijing.gov.cn/">北京市政府</option>
+      <option value="http://www.beijingit.gov.cn/">XXX市经济和信息化委员会</option>
+      <option value="http://www.bjkw.gov.cn/n8785584/index.html">XXX市科委</option>
+      <option value="http://www.bjpc.gov.cn/">XXX市发展和改革委员会</option>
+      <option value="http://www.beijing.gov.cn/">XXX市政府</option>
       <option value="http://www.sdpc.gov.cn/">国家发改委</option>
 
     </select>

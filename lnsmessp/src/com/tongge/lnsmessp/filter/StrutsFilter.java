@@ -33,7 +33,6 @@ public class StrutsFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		System.out.println("asdfasdfasdf");
 		chain.doFilter(request, response);
 	}
 

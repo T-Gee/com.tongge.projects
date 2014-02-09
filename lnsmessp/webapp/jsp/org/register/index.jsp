@@ -27,22 +27,22 @@
             <%
              	if ("person".equals(kind)) {
             %>
-            <jsp:include page="/jsp/org/register/left/person.jsp"></jsp:include>
+            <jsp:include page="/jsp/org/register/main/person.jsp"></jsp:include>
             <%
           	} else if ("compnay".equals(kind)) { 
              %>
-            <jsp:include page="/jsp/org/register/left/compnay.jsp"></jsp:include>
+            <jsp:include page="/jsp/org/register/main/compnay.jsp"></jsp:include>
             <%
             } else if ("services".equals(kind)) { 
            %>
-            <jsp:include page="/jsp/org/register/left/services.jsp"></jsp:include>
+            <jsp:include page="/jsp/org/register/main/services.jsp"></jsp:include>
             <%
              	} 
            %>
           </div>
           <div class="right">
             <div class="clear" style="height: 68px;"></div>
-            <jsp:include page="right/servshow.jsp"></jsp:include>
+            <jsp:include page="../../content/component/servshow.jsp"></jsp:include>
             <div class="clear"></div>
           </div>
         </div>

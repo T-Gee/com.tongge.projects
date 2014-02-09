@@ -27,27 +27,27 @@
     <div class="serRight" id="001">
       <dl>
         <dd xtab="301">
-          <a href="http://www.bdasme.org/zcfwjs/index.jhtml"><img src="<%=path%>/images/1914171232f8.jpg" width="68"
+          <a href="http://www.bdasme.org/zcfwjs/index.jhtml"><img src="<%=imagePath%>/1914171232f8.jpg" width="68"
             height="74">
             <center>服务介绍</center></a>
         </dd>
         <dd xtab="302">
-          <a href="http://www.bdasme.org/zcgjzc/index.jhtml"><img src="<%=path%>/images/19142156v5fz.jpg" width="68"
+          <a href="http://www.bdasme.org/zcgjzc/index.jhtml"><img src="<%=imagePath%>/19142156v5fz.jpg" width="68"
             height="74">
             <center>国家政策</center></a>
         </dd>
         <dd xtab="303">
-          <a href="http://www.bdasme.org/zcbjszc/index.jhtml"><img src="<%=path%>/images/19142204leqd.jpg"
+          <a href="http://www.bdasme.org/zcbjszc/index.jhtml"><img src="<%=imagePath%>/19142204leqd.jpg"
             width="68" height="74">
-            <center>北京市政策</center></a>
+            <center>XXX市政策</center></a>
         </dd>
         <dd xtab="304">
-          <a href="http://www.bdasme.org/zcxqzc/index.jhtml"><img src="<%=path%>/images/19142215pxd3.jpg" width="68"
+          <a href="http://www.bdasme.org/zcxqzc/index.jhtml"><img src="<%=imagePath%>/19142215pxd3.jpg" width="68"
             height="74">
             <center>新区政策</center></a>
         </dd>
         <dd xtab="305">
-          <a href="http://www.bdasme.org/zgczc/index.jhtml"><img src="<%=path%>/images/1914222641nm.jpg" width="68"
+          <a href="http://www.bdasme.org/zgczc/index.jhtml"><img src="<%=imagePath%>/1914222641nm.jpg" width="68"
             height="74">
             <center>中关村政策</center></a>
         </dd>
@@ -70,17 +70,17 @@
     <div class="serRight" id="002" style="display: none;">
       <dl>
         <dd xtab="310">
-          <a href="http://www.bdasme.org/fwjg/index.jhtml"><img src="<%=path%>/images/19143630awdh.jpg" width="68"
+          <a href="http://www.bdasme.org/fwjg/index.jhtml"><img src="<%=imagePath%>/19143630awdh.jpg" width="68"
             height="74">
             <center>服务介绍</center></a>
         </dd>
         <dd xtab="311">
-          <a href="http://www.bdasme.org/jrjs/index.jhtml"><img src="<%=path%>/images/191432259gnb.jpg" width="68"
+          <a href="http://www.bdasme.org/jrjs/index.jhtml"><img src="<%=imagePath%>/191432259gnb.jpg" width="68"
             height="74">
             <center>服务机构</center></a>
         </dd>
         <dd xtab="312">
-          <a href="http://www.bdasme.org/jrfwhydt/index.jhtml"><img src="<%=path%>/images/19143341td1e.jpg"
+          <a href="http://www.bdasme.org/jrfwhydt/index.jhtml"><img src="<%=imagePath%>/19143341td1e.jpg"
             width="68" height="74">
             <center>行业动态</center></a>
         </dd>
@@ -107,17 +107,17 @@
     <div class="serRight" id="003" style="display: none;">
       <dl>
         <dd xtab="320">
-          <a href="http://www.bdasme.org/kjfwtefw/index.jhtml"><img src="<%=path%>/images/191434394s89.jpg"
+          <a href="http://www.bdasme.org/kjfwtefw/index.jhtml"><img src="<%=imagePath%>/191434394s89.jpg"
             width="68" height="74">
             <center>服务介绍</center></a>
         </dd>
         <dd xtab="321">
-          <a href="http://www.bdasme.org/kejs/index.jhtml"><img src="<%=path%>/images/19143541agw3.jpg" width="68"
+          <a href="http://www.bdasme.org/kejs/index.jhtml"><img src="<%=imagePath%>/19143541agw3.jpg" width="68"
             height="74">
             <center>服务机构</center></a>
         </dd>
         <dd xtab="322">
-          <a href="http://www.bdasme.org/kjfwhydt/index.jhtml"><img src="<%=path%>/images/19143551lr8l.jpg"
+          <a href="http://www.bdasme.org/kjfwhydt/index.jhtml"><img src="<%=imagePath%>/19143551lr8l.jpg"
             width="68" height="74">
             <center>行业动态</center></a>
         </dd>
@@ -138,17 +138,17 @@
     <div class="serRight" id="004" style="display: none;">
       <dl>
         <dd xtab="330">
-          <a href="http://www.bdasme.org/swfwjg/index.jhtml"><img src="<%=path%>/images/19143812zsf6.jpg" width="68"
+          <a href="http://www.bdasme.org/swfwjg/index.jhtml"><img src="<%=imagePath%>/19143812zsf6.jpg" width="68"
             height="74">
             <center>服务介绍</center></a>
         </dd>
         <dd xtab="331">
-          <a href="http://www.bdasme.org/swfwfwjg/index.jhtml"><img src="<%=path%>/images/19143819ufv9.jpg"
+          <a href="http://www.bdasme.org/swfwfwjg/index.jhtml"><img src="<%=imagePath%>/19143819ufv9.jpg"
             width="68" height="74">
             <center>服务机构</center></a>
         </dd>
         <dd xtab="332">
-          <a href="http://www.bdasme.org/swfwhydt/index.jhtml"><img src="<%=path%>/images/19143828g1c9.jpg"
+          <a href="http://www.bdasme.org/swfwhydt/index.jhtml"><img src="<%=imagePath%>/19143828g1c9.jpg"
             width="68" height="74">
             <center>行业动态</center></a>
         </dd>

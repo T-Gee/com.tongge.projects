@@ -9,22 +9,22 @@
   <div class="footm">
     <dl>
       <dd>
-        <a href="http://www.bdasme.org/rczp.jhtml">人才招聘</a>
+        <a href="<%=path%>/jsp/content/recruit/index.jsp">人才招聘</a>
       </dd>
       <dd>
-        <a href="http://www.bdasme.org/gywm.jhtml">关于我们</a>
+        <a href="<%=path%>/jsp/content/about/index.jsp">关于我们</a>
       </dd>
       <dd>
-        <a href="http://www.bdasme.org/lxwm.jhtml">联系我们</a>
+        <a href="<%=path%>/jsp/content/contact/index.jsp">联系我们</a>
       </dd>
-      <dd style="border-right: 0;">
-        <a href="http://www.bdasme.org/guestbook.jspx">帮助中心</a>
-      </dd>
+<!--       <dd style="border-right: 0;"> -->
+<!--         <a href="http://www.bdasme.org/guestbook.jspx">帮助中心</a> -->
+<!--       </dd> -->
       <dt class="clear"></dt>
     </dl>
     <div class="center">
-      版权所有：北京经济技术开发区中小企业服务中心 北京亦庄科技创新服务中心<br> 技术支持：国富通信息技术发展有限公司<br> Copy right © 2012-2022 China
-      International Travel<br> Service Limited, Head Office. All rights reserved.<br> epvice@ec.com.cn
+      版权所有：XX经济技术开发区中小企业服务中心 XXYY科技创新服务中心<br> 技术支持：XXX信息技术发展有限公司<br> Copy right © 2014-2024 China
+      International Travel<br> Service Limited, Head Office. All rights reserved.<br> to@ecxx.com.cn
     </div>
   </div>
   <div class="footr">

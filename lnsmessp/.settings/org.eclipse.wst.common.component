@@ -3,7 +3,8 @@
     <wb-module deploy-name="lnsmessp">
         <wb-resource deploy-path="/" source-path="/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/tools"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/supportdb"/>
         <property name="context-root" value="lnsmessp"/>
         <property name="java-output-path" value="/lnsmessp/webapp/WEB-INF/classes"/>
     </wb-module>

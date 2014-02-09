@@ -6,12 +6,12 @@
 		$("#guestbookCaptcha").attr("src", "/captcha.svl?d=" + new Date());
 	}
 	$(function() {
-		$("#jvForm").validate()
+		$("#jvForm").validate();
 	});
 </script>
 <div class="content">
   <div class="login">
-    <form style="display: inline" action="/login.jspx" id="jvForm" name="jvForm" method="post">
+    <form style="display: inline" action="<%=path%>/login.do" id="jvForm" name="jvForm" method="post">
       <table align="center" border="0" cellpadding="0" cellspacing="5" width="460">
         <tbody>
           <tr>
@@ -20,31 +20,22 @@
         </tbody>
       </table>
       <center>
-        <h1 style="margin-top: 5px;">会员登录</h1>
+        <h1 style="margin-top: 5px;">会员登录 ${msg}</h1>
       </center>
       <table style="margin-left: 90px;" border="0" cellpadding="0" cellspacing="0" height="150" width="320">
         <tbody>
           <tr>
             <td width="50">用户名：</td>
-            <td width="270"><input id="username" name="username" class="login_input1 required username" type="text"></td>
+            <td width="270"><input id="username" name="username" class="login_input1 required username" type="text" value="tongge"></td>
           </tr>
           <tr>
             <td>密&nbsp;&nbsp;码：</td>
-            <td><input id="password" name="password" class="login_input2 required" type="password"></td>
+            <td><input id="password" name="password" class="login_input2 required" type="password" value="123456"></td>
           </tr>
 
           <tr>
-            <td>&nbsp;
-<!--             验证码： -->
-            </td>
-            <td>
-<!--             <input id="captcha" name="captcha" class="login_input3 required" type="text"> -->
-<!--               <div class="login_yanz"> -->
-<%--                 <img id="guestbookCaptcha" src="<%=path%>/captcha.jpeg" --%>
-<!--                   onclick="this.src='/captcha.svl?d='+new Date()*1" height="20" width="60"> <span -->
-<!--                   onclick="refresh()">点击验证码，换一张</span> -->
-<!--               </div> -->
-              </td>
+            <td>&nbsp;</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -53,9 +44,9 @@
 
         <div class="clear"></div>
         <p style="height: 35px; line-height: 35px; font-weight: 800; color: #000;">如果您不是会员，请立即注册!</p>
-        <a href="<%=path %>/jsp/org/register/index.jsp?kind=compnay">企业用户注册</a>
-        <a href="<%=path %>/jsp/org/register/index.jsp?kind=services">机构用户注册</a>
-        <a href="<%=path %>/jsp/org/register/index.jsp?kind=person">个人用户注册</a>
+        <a href="<%=path%>/jsp/org/register/index.jsp?kind=compnay">企业用户注册</a>
+        <a href="<%=path%>/jsp/org/register/index.jsp?kind=services">机构用户注册</a>
+        <a href="<%=path%>/jsp/org/register/index.jsp?kind=person">个人用户注册</a>
       </center>
     </form>
   </div>

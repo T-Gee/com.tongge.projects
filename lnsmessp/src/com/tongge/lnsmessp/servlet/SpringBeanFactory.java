@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServlet;
 
 import com.tongge.lnsmessp.action.BaseAction;
 import com.tongge.lnsmessp.action.LoginAction;
+import com.tongge.lnsmessp.action.OrgServicesAction;
+import com.tongge.lnsmessp.action.PolicyAction;
+import com.tongge.lnsmessp.action.RegisterAction;
+import com.tongge.lnsmessp.action.TechnologyAction;
 
 /**
  * Servlet implementation class SpringBeanFactory
@@ -24,6 +28,10 @@ public class SpringBeanFactory extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		context.put("login", new LoginAction());
+		context.put("register", new RegisterAction());
+		context.put("policy", new PolicyAction());
+		context.put("orgServices", new OrgServicesAction());
+		context.put("technology", new TechnologyAction());
 	}
 	public static BaseAction getAction(String name){
 		return context.get(name);

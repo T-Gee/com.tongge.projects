@@ -6,85 +6,88 @@
   <div class="clear" style="height: 20px;"></div>
   <h3>服务机构注册</h3>
   <div class="reg_one">
-    <form style="display: inline" action="servicesregister.jspx" method="post" name="jvForm" id="jvForm">
+    <form style="display: inline" action="<%=path %>/register.do" method="post" name="jvForm" id="jvForm">
+      <input type="hidden" name="kind" value="<%= request.getParameter("kind") %>" />
       <input id="groupId" name="groupId" value="7" type="hidden">
       <table border="0" cellpadding="0" cellspacing="0" height="445" width="644">
         <tbody>
           <tr>
             <td align="right" width="135">服务机构（全称）</td>
             <td width="506">&nbsp;<input name="title" style="width: 280px; height: 16px;" class="required"
-              type="text"> <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+              type="text" value="服务机构（全称）"> <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
             </td>
           </tr>
           <tr>
             <td align="right">用户名</td>
             <td>&nbsp;<input name="username" style="width: 190px; height: 16px;" class="required username"
-              type="text"> <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+              type="text" value="fwjg"> <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
             </td>
           </tr>
           <tr>
             <td align="right">密码</td>
-            <td>&nbsp;<input name="password" id="password" value="" style="width: 190px; height: 16px;"
-              class="required" type="password"> <img src="<%=path%>/images/circle_03.png"
-              style="vertical-align: middle;">
+            <td>&nbsp;<input name="password" id="password" value="123456" style="width: 190px; height: 16px;"
+              class="required" type="password" /> <img src="<%=imagePath%>/circle_03.png"
+              style="vertical-align: middle;"/>
             </td>
           </tr>
           <tr>
             <td align="right">确认密码</td>
-            <td>&nbsp;<input name="confirm_password" id="confirm_password" value=""
-              style="width: 190px; height: 16px;" class="required" type="password"> <img
-              src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+            <td>&nbsp;<input name="confirm_password" id="confirm_password" value="123456"
+              style="width: 190px; height: 16px;" class="required" type="password" /> <img
+              src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;" />
             </td>
           </tr>
           <tr>
             <td align="right">营业范围</td>
-            <td>&nbsp;<input name="shortTitle" style="width: 190px; height: 16px;" class="required" type="text">
-              <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+            <td>&nbsp;<input name="shortTitle" value="营业范围" style="width: 190px; height: 16px;" class="required" type="text"/>
+              <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
             </td>
           </tr>
           <tr>
             <td align="right">特色服务</td>
-            <td>&nbsp;<input name="attr_specialService" style="width: 190px; height: 16px;" class="required"
-              type="text"> <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+            <td>&nbsp;<input name="specialService" value="特色服务" style="width: 190px; height: 16px;" class="required"
+              type="text" /> <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
             </td>
           </tr>
           <tr>
             <td align="right">注册资本金(万元)</td>
-            <td>&nbsp;<input name="author" style="width: 190px; height: 16px;" class="required" type="text">
-              <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+            <td>&nbsp;<input name="author" onblur="ismoney(this)" value="123.23" style="width: 190px;  height: 16px;" class="required" type="text">
+              <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;" />
             </td>
           </tr>
           <tr>
             <td align="right">组织机构代码</td>
-            <td>&nbsp;<input name="origin" style="width: 280px; height: 16px;" type="text">
+            <td>&nbsp;<input name="origin" style="width: 280px; height: 16px;" type="text" value="组织机构代码" />
             </td>
           </tr>
           <tr>
             <td align="right">公司注册地</td>
-            <td>&nbsp;<input name="attr_regCompany" style="width: 280px; height: 16px;" type="text">
+            <td>&nbsp;<input name="companyAddress" style="width: 280px; height: 16px;" type="text" value="公司注册地" />
             </td>
           </tr>
           <tr>
             <td align="right">公司办公地</td>
-            <td>&nbsp;<input name="attr_officeCompany" style="width: 280px; height: 16px;" type="text">
+            <td>&nbsp;<input name="officeCompany" style="width: 280px; height: 16px;" type="text" value="公司办公地" />
             </td>
           </tr>
           <tr>
             <td align="right">公司人数</td>
-            <td>&nbsp;<input name="attr_companyNumber" style="width: 190px; height: 16px;" type="text">
+            <td>&nbsp;<input name="companyNumber" maxlength="10" style="width: 190px; height: 16px;"
+                onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                type="text" value="12" /> 该项只允许输入数字
             </td>
           </tr>
           <tr>
             <td align="right">服务类型</td>
-            <td>&nbsp;<select name="attr_servicesType" class="required">
-                <option selected="selected" value="">----请选择----</option>
-                <option value="政策服务">政策服务</option>
+            <td>&nbsp;<select name="servicesType" class="required">
+                <option value="">----请选择----</option>
+                <option selected="selected" value="政策服务">政策服务</option>
                 <option value="金融服务">金融服务</option>
                 <option value="科技服务">科技服务</option>
                 <option value="商务服务">商务服务</option>
                 <option value="其他服务">其他服务</option>
 
-            </select> <img src="<%=path%>/images/circle_03.png" style="vertical-align: middle;">
+            </select> <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;" />
             </td>
           </tr>
           <tr>
@@ -108,4 +111,4 @@
     </form>
   </div>
 </div>
-<script type="text/javascript" src="<%=path %>/jsp/org/register/left/validate.js"></script>
+<script type="text/javascript" src="<%=path %>/jsp/org/register/main/validate.js"></script>
