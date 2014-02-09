@@ -155,8 +155,9 @@
 	background: url(../images/x_34.png) -7px top no-repeat;
 	background-color: #FFF;
 	width: 963px;
-	height: auto;
-	z-index: 99
+	height: 200px;
+/* 	z-index: 99; */
+/* 	border: solid 1px #41abd5; */
 }
 .content .left {
 	width: 653px;
@@ -2755,4 +2756,8 @@ a:hover {
 
 #warp .new007 a:visited {
 	color: #720372;
+}
+
+font.msg {
+	color: red;
 }

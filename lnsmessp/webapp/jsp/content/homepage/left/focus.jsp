@@ -19,13 +19,13 @@
   <div id="myFocus">
     <div class="loading">
       <img src="<%=path%>/component/myfocus/img/loading.gif" alt="请稍候..." />
-      <%--           <img src="<%=path%>/images/focus/281457468hcw.jpg" thumb="" alt=""  text=" " /> --%>
+      <%--           <img src="<%=imagePath%>/focus/281457468hcw.jpg" thumb="" alt=""  text=" " /> --%>
     </div>
     <div class="pic">
       <ul>
-        <li><a href="#2"><img src="<%=path%>/images/focus/0619134318q7.jpg" thumb="" alt="" text=" " /></a></li>
-        <li><a href="#3"><img src="<%=path%>/images/focus/281457468hcw.jpg" thumb="" alt="" text=" " /></a></li>
-        <li><a href="#4"><img src="<%=path%>/images/focus/28151112wgiu.jpg" thumb="" alt="" text=" " /></a></li>
+        <li><a href="#2"><img src="<%=imagePath%>/focus/0619134318q7.jpg" thumb="" alt="" text=" " /></a></li>
+        <li><a href="#3"><img src="<%=imagePath%>/focus/281457468hcw.jpg" thumb="" alt="" text=" " /></a></li>
+        <li><a href="#4"><img src="<%=imagePath%>/focus/28151112wgiu.jpg" thumb="" alt="" text=" " /></a></li>
       </ul>
     </div>
   </div>

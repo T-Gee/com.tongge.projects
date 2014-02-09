@@ -48,7 +48,7 @@
 <!-- mapList-->
 <div class="mapList">
   <div class="mapLeft">
-    <img src="<%=path%>/images/test0031.png" width="350" height="307">
+    <img src="<%=imagePath%>/test0031.png" width="350" height="307">
   </div>
   <div class="mapRight">
     <h3>产品展示</h3>
@@ -57,127 +57,127 @@
       <div class="pics_middle">
         <dl style="width: 3875px;">
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3704.jhtml"><img src="<%=path%>/images/07105154k4xd.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3704.jhtml"><img src="<%=imagePath%>/07105154k4xd.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3703.jhtml"><img src="<%=path%>/images/07105105h65n.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3703.jhtml"><img src="<%=imagePath%>/07105105h65n.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3702.jhtml"><img src="<%=path%>/images/07105007nixo.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3702.jhtml"><img src="<%=imagePath%>/07105007nixo.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3701.jhtml"><img src="<%=path%>/images/07104834soyk.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3701.jhtml"><img src="<%=imagePath%>/07104834soyk.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3688.jhtml"><img src="<%=path%>/images/061022009f9m.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3688.jhtml"><img src="<%=imagePath%>/061022009f9m.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3681.jhtml"><img src="<%=path%>/images/06100512cqin.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3681.jhtml"><img src="<%=imagePath%>/06100512cqin.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3682.jhtml"><img src="<%=path%>/images/06101742elaf.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3682.jhtml"><img src="<%=imagePath%>/06101742elaf.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3686.jhtml"><img src="<%=path%>/images/061020527d6j.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3686.jhtml"><img src="<%=imagePath%>/061020527d6j.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3685.jhtml"><img src="<%=path%>/images/06102008689w.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3685.jhtml"><img src="<%=imagePath%>/06102008689w.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3684.jhtml"><img src="<%=path%>/images/06101926lo7p.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3684.jhtml"><img src="<%=imagePath%>/06101926lo7p.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3683.jhtml"><img src="<%=path%>/images/061018437sbr.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3683.jhtml"><img src="<%=imagePath%>/061018437sbr.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/3687.jhtml"><img src="<%=path%>/images/061021261hmn.jpg"
+            <a href="http://www.bdasme.org/qycpzs/3687.jhtml"><img src="<%=imagePath%>/061021261hmn.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2339.jhtml"><img src="<%=path%>/images/171119379eqj.png"
+            <a href="http://www.bdasme.org/qycpzs/2339.jhtml"><img src="<%=imagePath%>/171119379eqj.png"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2338.jhtml"><img src="<%=path%>/images/171118518xtf.png"
+            <a href="http://www.bdasme.org/qycpzs/2338.jhtml"><img src="<%=imagePath%>/171118518xtf.png"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2337.jhtml"><img src="<%=path%>/images/17111323wqib.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2337.jhtml"><img src="<%=imagePath%>/17111323wqib.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2336.jhtml"><img src="<%=path%>/images/171112538c4q.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2336.jhtml"><img src="<%=imagePath%>/171112538c4q.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2335.jhtml"><img src="<%=path%>/images/1711121871dc.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2335.jhtml"><img src="<%=imagePath%>/1711121871dc.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2334.jhtml"><img src="<%=path%>/images/17110926izcy.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2334.jhtml"><img src="<%=imagePath%>/17110926izcy.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2333.jhtml"><img src="<%=path%>/images/17110852640o.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2333.jhtml"><img src="<%=imagePath%>/17110852640o.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2332.jhtml"><img src="<%=path%>/images/17110815bty0.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2332.jhtml"><img src="<%=imagePath%>/17110815bty0.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2331.jhtml"><img src="<%=path%>/images/17105915djna.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2331.jhtml"><img src="<%=imagePath%>/17105915djna.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2330.jhtml"><img src="<%=path%>/images/17105846w2dv.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2330.jhtml"><img src="<%=imagePath%>/17105846w2dv.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2329.jhtml"><img src="<%=path%>/images/17105810svic.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2329.jhtml"><img src="<%=imagePath%>/17105810svic.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2328.jhtml"><img src="<%=path%>/images/17105736pl61.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2328.jhtml"><img src="<%=imagePath%>/17105736pl61.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2327.jhtml"><img src="<%=path%>/images/17105654x2me.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2327.jhtml"><img src="<%=imagePath%>/17105654x2me.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2326.jhtml"><img src="<%=path%>/images/171056128o9y.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2326.jhtml"><img src="<%=imagePath%>/171056128o9y.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2325.jhtml"><img src="<%=path%>/images/171055410vne.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2325.jhtml"><img src="<%=imagePath%>/171055410vne.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2324.jhtml"><img src="<%=path%>/images/17105504h31x.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2324.jhtml"><img src="<%=imagePath%>/17105504h31x.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2323.jhtml"><img src="<%=path%>/images/17105351kwfj.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2323.jhtml"><img src="<%=imagePath%>/17105351kwfj.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2322.jhtml"><img src="<%=path%>/images/171052380mb7.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2322.jhtml"><img src="<%=imagePath%>/171052380mb7.jpg"
               width="100" height="100"></a>
           </dd>
           <dd>
-            <a href="http://www.bdasme.org/qycpzs/2321.jhtml"><img src="<%=path%>/images/17104852r7vu.jpg"
+            <a href="http://www.bdasme.org/qycpzs/2321.jhtml"><img src="<%=imagePath%>/17104852r7vu.jpg"
               width="100" height="100"></a>
           </dd>
 
@@ -193,7 +193,7 @@
     <div class="lineBorder5" style="margin-top: 15px;"></div>
     <h3>寻求合作</h3>
     <ul>
-      <li>·&nbsp;<a href="http://www.bdasme.org/qyzjxxqhz/3689.jhtml" title="安诺优达被认定成为北京科技研究开发机构">安诺优达被认定成为北京科技研究开发机构</a></li>
+      <li>·&nbsp;<a href="http://www.bdasme.org/qyzjxxqhz/3689.jhtml" title="安诺优达被认定成为XXX科技研究开发机构">安诺优达被认定成为XXX科技研究开发机构</a></li>
       <li>·&nbsp;<a href="http://www.bdasme.org/qyzjxxqhz/3670.jhtml" title="中立安入驻生物医药园 开发区药代动力有了专业服务商">中立安入驻生物医药园
           开发区药代动力有...</a></li>
       <li>·&nbsp;<a href="http://www.bdasme.org/qyzjxxqhz/3669.jhtml" title="产业化半年就卖出两百台 中瑞蓝科双绕组驱动电机再树标杆">产业化半年就卖出两百台
