@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.tongge.lnsmessp.common.Constant;
 import com.tongge.lnsmessp.dao.UserDAO;
 import com.tongge.lnsmessp.dao.impl.UserDAOImpl;
 import com.tongge.lnsmessp.entities.UserEntity;
@@ -39,6 +40,7 @@ public class RegisterServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
+        request.setCharacterEncoding(Constant.CHARSET);
         request.removeAttribute("msg");
 
         UserEntity user = new UserEntity();
@@ -58,18 +60,20 @@ public class RegisterServlet extends HttpServlet {
         user.setRespectiveIndustries(StringUtils.nvl(request.getParameter("respectiveIndustries"), ""));
         user.setCompanyLeader(StringUtils.nvl(request.getParameter("companyLeader"), ""));
         try {
-//            if(!user.getUsername().matches("^[a-zA-Z].[a-zA-Z0-9_].{5,17}&")){
-//                //  用户不合法，不能新增
-//                request.setAttribute("msg", "<font class='msg'>（用户必须6~18个字符，可使用字母、数字、下划线，需以字母开头）</font>");
-//                RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/register/index.jsp?kind="
-//                        + user.getKind());
-//                dispatcher.forward(request, response);
-//                return;
-//            }
+            // if(!user.getUsername().matches("^[a-zA-Z].[a-zA-Z0-9_].{5,17}&")){
+            // // 用户不合法，不能新增
+            // request.setAttribute("msg",
+            // "<font class='msg'>（用户必须6~18个字符，可使用字母、数字、下划线，需以字母开头）</font>");
+            // RequestDispatcher dispatcher =
+            // request.getRequestDispatcher("/jsp/org/register/index.jsp?kind="
+            // + user.getKind());
+            // dispatcher.forward(request, response);
+            // return;
+            // }
             // check 唯一性
             UserEntity loaduser = userDAO.getUserByName(user.getUsername());
             if (loaduser != null) {
-                //  用户存在，不能新增
+                // 用户存在，不能新增
                 request.setAttribute("msg", "<font class='msg'>（用户存在，不能新增）</font>");
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/register/index.jsp?kind="
                         + user.getKind());

@@ -23,4 +23,16 @@ public class StringUtils {
         return false;
     }
 
+    public static String join(String[] array, String symbol) {
+        symbol = nvl(symbol, ",");
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < array.length; i++) {
+            sb.append(array[i]).append(symbol);
+        }
+        if (sb.length() > 1) {
+            sb.setLength(sb.length() - 2);
+        }
+        return sb.toString();
+    }
+
 }

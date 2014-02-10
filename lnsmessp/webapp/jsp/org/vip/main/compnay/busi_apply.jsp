@@ -10,7 +10,7 @@
 <div class="applica_title" style="margin-bottom: 2px;">申请服务</div>
 <div class="clear"></div>
 <div class="reg_one reg_one2">
-  <form action="appServiesSave.jspx" method="post" id="jvForm" name="jvForm" style="display: inline;">
+  <form action="<%=path %>/VIP.do?method=busiApply" method="post" id="jvForm" name="jvForm" style="display: inline;">
     <div class="applica_radio">
       <div class="applica_radio1">
         <input checked="checked" onclick="titleChange();" name="title" value="政策服务" xid="b001" type="radio"><b>政策服务</b>
@@ -141,13 +141,13 @@
         </tr>
         <tr style="height: 40px;">
           <td align="right">联系人：</td>
-          <td>&nbsp;<input name="secondServices" style="width: 265px; height: 20px;" class="required" type="text">
+          <td>&nbsp;<input name="contacts" style="width: 265px; height: 20px;" class="required" type="text">
             <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
           </td>
         </tr>
         <tr style="height: 40px;">
           <td align="right">联系电话：</td>
-          <td>&nbsp;<input name="contactMobile" style="width: 265px; height: 20px;" class="required" type="text">
+          <td>&nbsp;<input name="contactMobile" style="width: 265px; height: 20px;" class="required maxLength[14]"   type="text">
             <img src="<%=imagePath%>/circle_03.png" style="vertical-align: middle;">
           </td>
         </tr>
@@ -205,5 +205,6 @@
 			}
 		}
 	}
-	$("#jvForm").validate();
+	$("#jvForm").
+	validate();
 </script>

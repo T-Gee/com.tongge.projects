@@ -67,4 +67,15 @@
 				$("#guestbookCaptcha").attr("src",
 						"/captcha.svl?d=" + new Date());
 			}
+			$(document).ready(function(){
+				$(".channel_list .list_ul li .spc1").removeClass("spc1");
+				$(".channel_list .list_ul li a").each(function(index,a){
+ 					if(a.href.indexOf("method=<%=request.getParameter("method")%>") > -1) {
+ 						  $(a).parent().parent().prev().click();
+					    $(a).parent().addClass("spc1");
+	            return ;
+					}
+
+				});
+			});
 		</script>

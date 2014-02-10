@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.tongge.lnsmessp.common.Constant;
 import com.tongge.lnsmessp.dao.UserDAO;
 import com.tongge.lnsmessp.dao.impl.UserDAOImpl;
 import com.tongge.lnsmessp.entities.UserEntity;
@@ -18,24 +19,22 @@ import com.tongge.lnsmessp.entities.UserEntity;
  */
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    
-    private UserDAO userDAO = new UserDAOImpl();
 
+    private UserDAO userDAO = new UserDAOImpl();
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding(Constant.CHARSET);
         String op = request.getParameter("op");
-        if("logout".equals(op)){
+        if ("logout".equals(op)) {
             request.getSession().removeAttribute("CurrentUser");
             response.sendRedirect(request.getContextPath() + "/index.jsp");
-            return ;
+            return;
         }
         this.doPost(request, response);
     }
-
-    
 
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -44,6 +43,13 @@ public class LoginServlet extends HttpServlet {
             IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        Object currentuser = request.getSession().getAttribute("CurrentUser");
+        if(currentuser !=null){
+            request.setAttribute("msg", "<font class='msg'>请退出后，登录！</font>");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/login/index.jsp");
+            dispatcher.forward(request, response);
+            return;
+        }
         try {// check 唯一性
             UserEntity user = userDAO.getUserByName(username);
             if (user != null) {

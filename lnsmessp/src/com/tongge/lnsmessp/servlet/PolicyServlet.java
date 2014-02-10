@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.tongge.lnsmessp.action.PolicyAction;
+import com.tongge.lnsmessp.common.Constant;
 
 /**
  * Servlet implementation class PolicyServlet
@@ -28,6 +29,7 @@ public class PolicyServlet extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding(Constant.CHARSET);
         PolicyAction paction = (PolicyAction) SpringBeanFactory.getAction("policy");
         if ("show".equals(request.getParameter("method"))) {
             paction.show(request, response);

@@ -39,9 +39,9 @@
             %>
             <jsp:include page="main/compnay/busi_apply.jsp"></jsp:include>
             <%
-                } else if ("center".equals(method)) {
+                } else if ("compnayBusiQuery".equals(method)) {
             %>
-            <jsp:include page="main/detail.jsp"></jsp:include>
+            <jsp:include page="main/compnay/busi_query.jsp"></jsp:include>
             <%
                 } else if ("center".equals(method)) {
             %>

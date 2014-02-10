@@ -9,6 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.tongge.lnsmessp.action.CompnayAction;
+import com.tongge.lnsmessp.action.PersonAction;
+import com.tongge.lnsmessp.action.ServicesAction;
+import com.tongge.lnsmessp.common.Constant;
 import com.tongge.lnsmessp.dao.UserDAO;
 import com.tongge.lnsmessp.dao.impl.UserDAOImpl;
 import com.tongge.lnsmessp.entities.UserEntity;
@@ -21,6 +25,12 @@ public class VIPServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     private UserDAO userDAO = new UserDAOImpl();
+    
+    private CompnayAction compnay = new CompnayAction();
+    
+    private ServicesAction services = new ServicesAction();
+    
+    private PersonAction person = new PersonAction();
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,6 +44,7 @@ public class VIPServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
+        request.setCharacterEncoding(Constant.CHARSET);
 //        String kind = ((UserEntity)request.getSession().getAttribute("CurrentUser")).getKind();
         if ("center".equals(request.getParameter("method"))) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
@@ -47,7 +58,13 @@ public class VIPServlet extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
+        } else if ("busiApply".equals(request.getParameter("method"))) {
+            compnay.busiApply(request,response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("VIP.do?method=compnayBusiQuery");
+            dispatcher.forward(request, response);
+            return;
         } else if ("compnayBusiQuery".equals(request.getParameter("method"))) {
+            compnay.busiQuery(request,response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;

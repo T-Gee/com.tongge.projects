@@ -7,4 +7,6 @@ public class Constant {
     public static String DOMAIN;
     
     public static String CONTEXT_ROOT;
+    
+    public static String CHARSET = "UTF-8";
 }
