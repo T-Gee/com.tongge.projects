@@ -16,7 +16,7 @@ public class OrgServicesAction extends BaseAction {
     private UserDAO dao = new UserDAOImpl();
 
     public void showdoms(HttpServletRequest request, HttpServletResponse response) throws SQLException {
-        List<UserEntity> userlist = dao.getUserByNameType("services");
+        List<UserEntity> userlist = dao.getUserByType("services");
         List<String> doms = new ArrayList<String>();
         for (int i = 0; i < userlist.size(); i++) {
             doms.add(userlist.get(i).toDOMString());

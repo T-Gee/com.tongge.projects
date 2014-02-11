@@ -1,19 +1,20 @@
 package com.tongge.lnsmessp.action;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.tongge.lnsmessp.dao.BusiapplyDAO;
+import com.tongge.lnsmessp.dao.ServicesdetailsDAO;
 import com.tongge.lnsmessp.dao.impl.BusiapplyDAOImpl;
+import com.tongge.lnsmessp.dao.impl.ServicesdetailsDAOImpl;
 import com.tongge.lnsmessp.entities.BusiapplyEntity;
 import com.tongge.lnsmessp.entities.UserEntity;
 import com.tongge.tools.common.lang.StringUtils;
 
 public class CompnayAction extends BaseAction {
 
-    private BusiapplyDAO dao = new BusiapplyDAOImpl();
+    private BusiapplyDAO busiApplyDAO = new BusiapplyDAOImpl();
+    private ServicesdetailsDAO servicesdetailsDAO = new ServicesdetailsDAOImpl();
 
     public void busiApply(HttpServletRequest request, HttpServletResponse response) {
         UserEntity currentuser = (UserEntity) request.getSession().getAttribute("CurrentUser");
@@ -24,13 +25,22 @@ public class CompnayAction extends BaseAction {
         entity.setContacts(request.getParameter("contacts"));
         entity.setContactMobile(request.getParameter("contactMobile"));
         entity.setDescription(request.getParameter("description"));
-        dao.addEntity(entity);
+        busiApplyDAO.addEntity(entity);
     }
 
     public void busiQuery(HttpServletRequest request, HttpServletResponse response) {
         String title = request.getParameter("title");
         int origin = Integer.parseInt(StringUtils.nvl(request.getParameter("origin"),"-1"));
-        request.setAttribute("entities",dao.queryObjectsByTitleOrigin(title, origin));
+        request.setAttribute("entities",busiApplyDAO.queryObjectsByTitleOrigin(title, origin));
+    }
+
+    public void saveCompnayDetails(HttpServletRequest request, HttpServletResponse response) {
+        String typeImg = request.getParameter("liulan");
+        typeImg = typeImg.substring(typeImg.lastIndexOf("\\"));
+        String introduce = request.getParameter("introduce");
+        String business = request.getParameter("business");
+        servicesdetailsDAO.addObjects(typeImg,introduce,business);
+        
     }
 
 }

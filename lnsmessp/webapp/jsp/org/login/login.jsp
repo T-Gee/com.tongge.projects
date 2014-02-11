@@ -26,7 +26,8 @@
         <tbody>
           <tr>
             <td width="50">用户名：</td>
-            <td width="270"><input id="username" name="username" class="login_input1 required username" type="text" value="tongge"></td>
+            <td width="270"><input id="username" name="username" class="login_input1 required username" type="text" 
+            value="qyyh"  /></td>
           </tr>
           <tr>
             <td>密&nbsp;&nbsp;码：</td>

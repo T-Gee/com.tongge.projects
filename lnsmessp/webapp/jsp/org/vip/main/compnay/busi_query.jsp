@@ -2,9 +2,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.BusiapplyEntity"%>
-<%
-    //@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"--
-%>
 <script type="text/javascript" src="<%=path%>/scripts/switch.js"></script>
 <div class="clear"></div>
 <div class="current">
@@ -82,19 +79,18 @@
       <%--     </c:forEach> --%>
       <%
           List entities = (List) request.getAttribute("entities");
-      System.out.println("**************************");
           for (int i = 0; i < entities.size(); i++) {
-              BusiapplyEntity entity = (BusiapplyEntity)entities.get(i);
-              %>
-              <tr>
-        <td align="center"><strong><%=entity.getBusicode() %></strong></td>
-        <td align="center"><strong><%=entity.getTitle() %></strong></td>
-        <td align="center"><strong><%=entity.getShortTitle() %> </strong></td>
-        <td align="center"><strong><%=entity.getLastupddate() %></strong></td>
-        <td align="center"><strong><%=entity.getProccess() %></strong></td>
-        <td align="center"><strong><%=entity.getIsValuing() %></strong></td>
+              BusiapplyEntity entity = (BusiapplyEntity) entities.get(i);
+      %>
+      <tr>
+        <td align="center"><strong><%=entity.getBusicode()%></strong></td>
+        <td align="center"><strong><%=entity.getTitle()%></strong></td>
+        <td align="center"><strong><%=entity.getShortTitle()%> </strong></td>
+        <td align="center"><strong><%=entity.getLastupddate()%></strong></td>
+        <td align="center"><strong><%=entity.getProccess()%></strong></td>
+        <td align="center"><strong><%=entity.getIsValuing()%></strong></td>
       </tr>
-              <%
+      <%
           }
       %>
     </tbody>

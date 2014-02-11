@@ -1,5 +1,7 @@
 package com.tongge.lnsmessp.entities;
 
+import java.sql.Date;
+
 import com.tongge.lnsmessp.common.Constant;
 
 public class UserEntity {
@@ -38,6 +40,8 @@ public class UserEntity {
     private String respectiveIndustries;
     // 公司法人代表
     private String companyLeader;
+    
+    private Date createdate;
 
     public String getUsername() {
         return username;
@@ -162,6 +166,14 @@ public class UserEntity {
     public String toDOMString() {
         return "<li><a href=" + Constant.DOMAIN + "orgservices.do?method=showdetails&id='" + id
                 + " target='_blank' title='" + title + "'>" + title + "</a></li>";
+    }
+
+    public Date getCreatedate() {
+        return createdate;
+    }
+
+    public void setCreatedate(Date createdate) {
+        this.createdate = createdate;
     }
 
 }

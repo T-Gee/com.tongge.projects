@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.tongge.lnsmessp.entities.UserEntity" %>
+<%@ page import="com.tongge.lnsmessp.entities.UserEntity"%>
 <%@include file="/jsp/base/constant.jsp"%>
 <%@include file="/jsp/base/include.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -12,7 +12,7 @@
 <meta content="辽宁中小企业服务平台" name="description" />
 </head>
 <%
-    String kind = ((UserEntity)request.getSession().getAttribute("CurrentUser")).getKind();
+    String kind = ((UserEntity) request.getSession().getAttribute("CurrentUser")).getKind();
     String method = request.getParameter("method");
 %>
 <body>
@@ -43,13 +43,17 @@
             %>
             <jsp:include page="main/compnay/busi_query.jsp"></jsp:include>
             <%
-                } else if ("center".equals(method)) {
+                } else if ("reommendedList".equals(method)) {
             %>
-            <jsp:include page="main/detail.jsp"></jsp:include>
+            <jsp:include page="main/compnay/reommendedList.jsp"></jsp:include>
+            <%
+                } else if ("forEnterInfo".equals(method)) {
+            %>
+            <jsp:include page="main/compnay/forEnterInfo.jsp"></jsp:include>
             <%
                 }
             %>
-            <div class="clear" style="height:20px"></div>
+            <div class="clear" style="height: 20px"></div>
           </div>
           <div class="right">
             <div class="clear" style="height: 68px;"></div>

@@ -11,8 +11,11 @@ public interface UserDAO {
 
     int addUser(UserEntity user) throws SQLException;
 
-    List<UserEntity> getUserByNameType(String string) throws SQLException;
+    List<UserEntity> getUserByType(String string) throws SQLException;
 
     void updPwd(String id, String newPwd);
+
+    List<UserEntity> getUserByServicesType(String flag) throws SQLException;
+
 
 }

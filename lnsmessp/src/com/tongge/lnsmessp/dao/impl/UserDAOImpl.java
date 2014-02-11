@@ -1,6 +1,7 @@
 package com.tongge.lnsmessp.dao.impl;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,23 +25,7 @@ public class UserDAOImpl implements UserDAO {
             pstmt.setString(1, username);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                UserEntity user = new UserEntity();
-                user.setId(rs.getString("id"));
-                user.setUsername(rs.getString("username"));
-                user.setPassword(rs.getString("password"));
-                user.setKind(rs.getString("kind"));
-                user.setShortTitle(rs.getString("shortTitle"));
-                user.setSpecialService(rs.getString("specialService"));
-                user.setAuthor(rs.getDouble("Author"));
-                user.setOrigin(rs.getString("origin"));
-                user.setCompanyAddress(rs.getString("companyAddress"));
-                user.setOfficeCompany(rs.getString("officeCompany"));
-                user.setCompanyNumber(rs.getInt("companyNumber"));
-                user.setServicesType(rs.getString("servicesType"));
-                user.setRespectiveIndustries(rs.getString("respectiveIndustries"));
-                user.setCompanyLeader(rs.getString("companyLeader"));
-                user.setTitle(rs.getString("title"));
-                return user;
+                return getEntity(rs);
             }
             return null;
         } finally {
@@ -58,8 +43,8 @@ public class UserDAOImpl implements UserDAO {
             // check 唯一性
             conn = JDBCUtils.getConn();
             String isql = "insert into user (id,username,password,kind,shortTitle,specialService,author,origin,"
-                    + "companyAddress,officeCompany,companyNumber,servicesType,respectiveIndustries,companyLeader,title) "
-                    + " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "companyAddress,officeCompany,companyNumber,servicesType,respectiveIndustries,companyLeader,title,createdate) "
+                    + " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = conn.prepareStatement(isql);
             pstmt.setString(1, user.getId());
             pstmt.setString(2, user.getUsername());
@@ -76,6 +61,7 @@ public class UserDAOImpl implements UserDAO {
             pstmt.setString(13, user.getRespectiveIndustries());
             pstmt.setString(14, user.getCompanyLeader());
             pstmt.setString(15, user.getTitle());
+            pstmt.setDate(16, new Date(System.currentTimeMillis()));
             return pstmt.executeUpdate();
         } finally {
             try {
@@ -86,7 +72,7 @@ public class UserDAOImpl implements UserDAO {
         }
     }
 
-    public List<UserEntity> getUserByNameType(String type) throws SQLException {
+    public List<UserEntity> getUserByType(String type) throws SQLException {
         List<UserEntity> result = new ArrayList<UserEntity>();
         Connection conn = null;
         try {
@@ -98,24 +84,31 @@ public class UserDAOImpl implements UserDAO {
             ResultSet rs = pstmt.executeQuery();
             System.out.println(ssql);
             while (rs.next()) {
-                UserEntity user = new UserEntity();
-                user.setId(rs.getString("id"));
-                user.setUsername(rs.getString("username"));
-                user.setPassword(rs.getString("password"));
-                user.setKind(rs.getString("kind"));
-                user.setShortTitle(rs.getString("shortTitle"));
-                user.setSpecialService(rs.getString("specialService"));
-                user.setAuthor(rs.getDouble("Author"));
-                user.setOrigin(rs.getString("origin"));
-                user.setCompanyAddress(rs.getString("companyAddress"));
-                user.setOfficeCompany(rs.getString("officeCompany"));
-                user.setCompanyNumber(rs.getInt("companyNumber"));
-                user.setServicesType(rs.getString("servicesType"));
-                user.setRespectiveIndustries(rs.getString("respectiveIndustries"));
-                user.setCompanyLeader(rs.getString("companyLeader"));
-                user.setTitle(rs.getString("title"));
-                System.out.println(user);
-                result.add(user);
+                result.add(getEntity(rs));
+            }
+            return result;
+        } finally {
+            try {
+                JDBCUtils.close(conn);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    public List<UserEntity> getUserByServicesType(String type) throws SQLException {
+        List<UserEntity> result = new ArrayList<UserEntity>();
+        Connection conn = null;
+        try {
+            // check 唯一性
+            conn = JDBCUtils.getConn();
+            String ssql = "select * from user where kind = 'services' and servicesType = ? ";
+            PreparedStatement pstmt = conn.prepareStatement(ssql);
+            pstmt.setString(1, type);
+            ResultSet rs = pstmt.executeQuery();
+            System.out.println(ssql);
+            while (rs.next()) {
+                result.add(getEntity(rs));
             }
             return result;
         } finally {
@@ -149,5 +142,25 @@ public class UserDAOImpl implements UserDAO {
                 e.printStackTrace();
             }
         }
+    }
+
+    private UserEntity getEntity(ResultSet rs) throws SQLException {
+        UserEntity user = new UserEntity();
+        user.setId(rs.getString("id"));
+        user.setUsername(rs.getString("username"));
+        user.setPassword(rs.getString("password"));
+        user.setKind(rs.getString("kind"));
+        user.setShortTitle(rs.getString("shortTitle"));
+        user.setSpecialService(rs.getString("specialService"));
+        user.setAuthor(rs.getDouble("Author"));
+        user.setOrigin(rs.getString("origin"));
+        user.setCompanyAddress(rs.getString("companyAddress"));
+        user.setOfficeCompany(rs.getString("officeCompany"));
+        user.setCompanyNumber(rs.getInt("companyNumber"));
+        user.setServicesType(rs.getString("servicesType"));
+        user.setRespectiveIndustries(rs.getString("respectiveIndustries"));
+        user.setCompanyLeader(rs.getString("companyLeader"));
+        user.setTitle(rs.getString("title"));
+        return user;
     }
 }

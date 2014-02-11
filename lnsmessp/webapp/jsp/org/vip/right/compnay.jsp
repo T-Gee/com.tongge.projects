@@ -70,10 +70,20 @@
 			$(document).ready(function(){
 				$(".channel_list .list_ul li .spc1").removeClass("spc1");
 				$(".channel_list .list_ul li a").each(function(index,a){
- 					if(a.href.indexOf("method=<%=request.getParameter("method")%>") > -1) {
- 						  $(a).parent().parent().prev().click();
-					    $(a).parent().addClass("spc1");
-	            return ;
+					if(<%=request.getParameter("flag")%> != "null"){
+  					if(a.href.indexOf('method=<%=request.getParameter("method")%>&flag=<%=request.getParameter("flag")%>') > -1) {
+                $(a).parent().parent().prev().click();
+                $(a).parent().addClass("spc1");
+                return ;
+            }
+						
+					}else{
+  					if(a.href.indexOf('method=<%=request.getParameter("method")%>') > -1) {
+                $(a).parent().parent().prev().click();
+                $(a).parent().addClass("spc1");
+                return ;
+            }
+						
 					}
 
 				});

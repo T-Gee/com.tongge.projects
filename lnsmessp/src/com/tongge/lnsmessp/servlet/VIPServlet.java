@@ -69,10 +69,16 @@ public class VIPServlet extends HttpServlet {
             dispatcher.forward(request, response);
             return;
         } else if ("reommendedList".equals(request.getParameter("method"))) {
+            services.query(request,response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
         } else if ("forEnterInfo".equals(request.getParameter("method"))) {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
+            dispatcher.forward(request, response);
+            return;
+        }  else if ("forEnterInfodo".equals(request.getParameter("method"))) {
+            compnay.saveCompnayDetails(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
