@@ -72,11 +72,6 @@
         <td align="center"><strong>进度</strong></td>
         <td align="center"><strong>是否评价</strong></td>
       </tr>
-      <%--       <c:forEach var="i" items="entities"  > --%>
-
-      <!--             标签体           -->
-
-      <%--     </c:forEach> --%>
       <%
           List entities = (List) request.getAttribute("entities");
           for (int i = 0; i < entities.size(); i++) {

@@ -17,5 +17,7 @@ public interface UserDAO {
 
     List<UserEntity> getUserByServicesType(String flag) throws SQLException;
 
+    int updUser(UserEntity user);
+
 
 }

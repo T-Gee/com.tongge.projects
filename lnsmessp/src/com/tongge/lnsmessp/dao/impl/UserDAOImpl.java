@@ -95,12 +95,11 @@ public class UserDAOImpl implements UserDAO {
             }
         }
     }
-    
+
     public List<UserEntity> getUserByServicesType(String type) throws SQLException {
         List<UserEntity> result = new ArrayList<UserEntity>();
         Connection conn = null;
         try {
-            // check 唯一性
             conn = JDBCUtils.getConn();
             String ssql = "select * from user where kind = 'services' and servicesType = ? ";
             PreparedStatement pstmt = conn.prepareStatement(ssql);
@@ -123,7 +122,6 @@ public class UserDAOImpl implements UserDAO {
     public void updPwd(String id, String newPwd) {
         Connection conn = null;
         try {
-            // check 唯一性
             conn = JDBCUtils.getConn();
             String ssql = "update  user set password = ? where id = ? ";
             PreparedStatement pstmt = conn.prepareStatement(ssql);
@@ -162,5 +160,40 @@ public class UserDAOImpl implements UserDAO {
         user.setCompanyLeader(rs.getString("companyLeader"));
         user.setTitle(rs.getString("title"));
         return user;
+    }
+
+    public int updUser(UserEntity user) {
+        Connection conn = null;
+        try {
+            conn = JDBCUtils.getConn();
+            String isql = "update user set kind=?,shortTitle=?,specialService=?,author=?,origin=?,"
+                    + "companyAddress=?,officeCompany=?,companyNumber=?,servicesType=?,respectiveIndustries=?,companyLeader=?,title=?where id = ? ";
+            PreparedStatement pstmt = conn.prepareStatement(isql);
+            pstmt.setString(1, user.getKind());
+            pstmt.setString(2, user.getShortTitle());
+            pstmt.setString(3, user.getSpecialService());
+            pstmt.setDouble(4, user.getAuthor());
+            pstmt.setString(5, user.getOrigin());
+            pstmt.setString(6, user.getCompanyAddress());
+            pstmt.setString(7, user.getOfficeCompany());
+            pstmt.setInt(8, user.getCompanyNumber());
+            pstmt.setString(19, user.getServicesType());
+            pstmt.setString(10, user.getRespectiveIndustries());
+            pstmt.setString(11, user.getCompanyLeader());
+            pstmt.setString(12, user.getTitle());
+            pstmt.setString(13, user.getId());
+            return pstmt.executeUpdate();
+        } catch (JDBCUTilsException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                JDBCUtils.close(conn);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return 0;
     }
 }

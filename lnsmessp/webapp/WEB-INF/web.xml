@@ -119,4 +119,13 @@
     <servlet-name>FileUploadServlet</servlet-name>
     <url-pattern>/fileUpload.do</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>SessiontimeoutFilter</display-name>
+    <filter-name>SessiontimeoutFilter</filter-name>
+    <filter-class>com.tongge.lnsmessp.filter.SessiontimeoutFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SessiontimeoutFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
 </web-app>

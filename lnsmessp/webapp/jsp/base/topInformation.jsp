@@ -5,7 +5,7 @@
 <dl class="topInformation">
   <dd class="left">
     <%
-        UserEntity currentuser = (UserEntity) request.getSession().getAttribute("CurrentUser");
+        UserEntity currentuser = (UserEntity) request.getSession(false).getAttribute("CurrentUser");
     %>
     您好，
     <%

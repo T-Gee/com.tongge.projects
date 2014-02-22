@@ -27,13 +27,14 @@
         <div class="content content2">
           <div class="left" style="width: 650px;">
             <%
-                if ("toUpdPwd".equals(method)) {
-            %>
-            <jsp:include page="main/updPwd.jsp"></jsp:include>
-            <%
-                } else if ("center".equals(method)) {
+                if ("center".equals(method)) {
             %>
             <jsp:include page="main/detail.jsp"></jsp:include>
+            <%
+                } else if ("compnay".equals(kind)) {
+                    if ("toUpdPwd".equals(method)) {
+            %>
+            <jsp:include page="main/updPwd.jsp"></jsp:include>
             <%
                 } else if ("toBusiApply".equals(method)) {
             %>
@@ -51,6 +52,39 @@
             %>
             <jsp:include page="main/compnay/forEnterInfo.jsp"></jsp:include>
             <%
+                } else if ("infolist".equals(method)) {
+            %>
+            <jsp:include page="main/compnay/infolist.jsp"></jsp:include>
+            <%
+                } else if ("toUpdAccount".equals(method)) {
+            %>
+            <jsp:include page="main/compnay/compnay.jsp"></jsp:include>
+            <%
+                }
+                } else if ("services".equals(kind)) {
+                    if ("servicesSelect".equals(method)) {
+            %>
+            <jsp:include page="main/services/servicesSelect.jsp"></jsp:include>
+            <%
+                } else if ("servicesStatusChange".equals(method)) {
+            %>
+            <jsp:include page="main/services/servicesStatusChange.jsp"></jsp:include>
+            <%
+                } else if ("toProvideServcies".equals(method)) {
+            %>
+            <jsp:include page="main/services/provideServices.jsp"></jsp:include>
+            <%
+                } else if ("forProvideServiceInfo".equals(method)) {
+            %>
+            <jsp:include page="main/services/forProvideServices.jsp"></jsp:include>
+            <%
+                } else if ("toUpdAccount".equals(method)) {
+            %>
+            <jsp:include page="main/services/updAccount.jsp"></jsp:include>
+            <%
+                }
+                } else if ("person".equals(kind)) {
+
                 }
             %>
             <div class="clear" style="height: 20px"></div>

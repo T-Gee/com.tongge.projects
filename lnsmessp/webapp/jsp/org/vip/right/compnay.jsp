@@ -39,7 +39,7 @@
         <a href="<%=path%>/VIP.do?method=forEnterInfo">发布企业信息</a>
       </p>
       <p xid="010109">
-        <a href="<%=path%>/VIP.do?method=forEnterInfoList">企业信息列表</a>
+        <a href="<%=path%>/VIP.do?method=infolist">企业信息列表</a>
       </p>
     </li>
     <li class="leve1" xid="0104"><a href="#">账号管理</a></li>
@@ -48,7 +48,7 @@
         <a href="<%=path%>/VIP.do?method=toUpdPwd&kind=compnay">修改密码</a>
       </p>
       <p xid="010111">
-        <a href="<%=path%>/VIP.do?method=updAccount">编辑账号信息</a>
+        <a href="<%=path%>/VIP.do?method=toUpdAccount">编辑账号信息</a>
       </p>
       <p xid="010112">
         <a href="<%=path%>/login.do?op=logout">退出登录</a>
@@ -70,7 +70,7 @@
 			$(document).ready(function(){
 				$(".channel_list .list_ul li .spc1").removeClass("spc1");
 				$(".channel_list .list_ul li a").each(function(index,a){
-					if(<%=request.getParameter("flag")%> != "null"){
+					if(!!<%=request.getParameter("flag")%> && <%=request.getParameter("flag")%> != "null"){
   					if(a.href.indexOf('method=<%=request.getParameter("method")%>&flag=<%=request.getParameter("flag")%>') > -1) {
                 $(a).parent().parent().prev().click();
                 $(a).parent().addClass("spc1");

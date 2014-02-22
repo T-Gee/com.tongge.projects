@@ -28,8 +28,8 @@
       <!--         <li><a href="http://www.bdasme.org/jrfwhydt/index.jhtml">行业动态</a></li> -->
       <!--       </ul> -->
     </dd>
-    <dd xid="4" class="">
-      <a href="http://www.bdasme.org/#"> 会员</a>
+<!--     <dd xid="4" class=""> -->
+<!--       <a href="http://www.bdasme.org/#"> 会员</a> -->
       <!--       <ul class="menu_list_object" id="4" style="z-index: 100; left: 688px; top: 159px; width: 92px; display: none;"> -->
       <!--         <li><a href="http://www.bdasme.org/kjfwtefw/index.jhtml">服务介绍</a></li> -->
       <!--         <li><a href="http://www.bdasme.org/kejs/index.jhtml">服务机构</a></li> -->
@@ -55,7 +55,7 @@
     <!--     </dd> -->
 
 
-  </dl>
+<!--   </dl> -->
 </div>
 <script type="text/javascript">
 	$(function() {
