@@ -6,7 +6,7 @@
 
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt; 企业会员中心-企业服务机构推荐列表
 </div>
 <div class="clear" style="height: 10px;"></div>

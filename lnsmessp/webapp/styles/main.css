@@ -19,6 +19,7 @@
 .topInformation1 {
 	width: 100%;
 	background: url(../images/topbg.png) repeat-x left top;
+	background-color: gray;
 }
 
 .topInformation .left {
@@ -57,7 +58,7 @@
 	width: 270px;
 	float: right;
 	height: 25px;
-	background: url(../images/x_39.png) no-repeat left top;
+/* 	background: url(../images/x_39.png) no-repeat left top; */
 	margin-top: 15px;
 }
 

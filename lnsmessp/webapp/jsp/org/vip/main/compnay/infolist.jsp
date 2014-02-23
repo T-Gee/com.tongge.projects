@@ -8,7 +8,7 @@
 <div class="clear"></div>
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt; 企业会员中心--企业信息发布列表
 </div>
 <!-- <div class="inquri_search">  

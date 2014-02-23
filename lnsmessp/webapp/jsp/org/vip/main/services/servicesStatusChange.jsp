@@ -53,12 +53,12 @@
         <td align="center"><strong>操作</strong></td>
       </tr>
       <tr>
-        <td align="center" height="47"><a href="http://www.bdasme.org/member/getDetailInfo.jspx?id=1842">2012061800001</a></td>
+        <td align="center" height="47"><a href="<%=path%>/member/getDetailInfo.jspx?id=1842">2012061800001</a></td>
         <td align="center">投融资服务</td>
         <td align="center">工商银行</td>
         <td align="center">2012-06-18 14:41:24</td>
         <td align="center"><b style="color: #008a27">已完成</b></td>
-        <td align="center"><a href="http://www.bdasme.org/member/contrArchiving.jspx?id=1842&amp;&amp;status=4">合同归档</a></td>
+        <td align="center"><a href="<%=path%>/member/contrArchiving.jspx?id=1842&amp;&amp;status=4">合同归档</a></td>
       </tr>
     </tbody>
   </table>

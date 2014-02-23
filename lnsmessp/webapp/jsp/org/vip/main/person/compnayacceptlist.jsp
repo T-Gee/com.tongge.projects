@@ -5,7 +5,7 @@
 <div class="clear"></div>
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt; 企业会员中心-业务办理--业务查询
 </div>
 <div class="clear" style="height: 20px;"></div>
@@ -49,7 +49,7 @@
 <form action="compnayacceptlist.jspx" id="tableForm" method="post">
   <dl class="back_ground">
     <dd style="margin-left: 280px;">
-      <a href="http://www.bdasme.org/member/compnayacceptlist.jspx"> 其他服务 </a>
+      <a href="<%=path%>/member/compnayacceptlist.jspx"> 其他服务 </a>
     </dd>
   </dl>
   <div class="clear"></div>
@@ -68,12 +68,12 @@
         <td align="center"><strong>操作</strong></td>
       </tr>
       <!--       <tr> -->
-      <!--         <td align="center" height="47"><a href="http://www.bdasme.org/member/getDetailInfo.jspx?id=3902">2013091600001</a></td> -->
+      <!--         <td align="center" height="47"><a href="<%=path%>/member/getDetailInfo.jspx?id=3902">2013091600001</a></td> -->
       <!--         <td align="center">互联网精准营销，互联网推广，互联网客户维护</td> -->
       <!--         <td align="center"><b style="color: #bd0020">未分配</b></td> -->
       <!--         <td align="center">2013-09-16 21:15:04</td> -->
       <!--         <td align="center"><a -->
-      <!--             href="http://www.bdasme.org/member/allotCompnayAccepct.jspx?id=3902&amp;&amp;title=%E4%BA%92%E8%81%94%E7%BD%91%E7%B2%BE%E5%87%86%E8%90%A5%E9%94%80%EF%BC%8C%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A8%E5%B9%BF%EF%BC%8C%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%A2%E6%88%B7%E7%BB%B4%E6%8A%A4">分配</a>&nbsp;&nbsp;</td> -->
+      <!--             href="<%=path%>/member/allotCompnayAccepct.jspx?id=3902&amp;&amp;title=%E4%BA%92%E8%81%94%E7%BD%91%E7%B2%BE%E5%87%86%E8%90%A5%E9%94%80%EF%BC%8C%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A8%E5%B9%BF%EF%BC%8C%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%A2%E6%88%B7%E7%BB%B4%E6%8A%A4">分配</a>&nbsp;&nbsp;</td> -->
       <!--       </tr> -->
       <%
           List entities = (List) request.getAttribute("entities");

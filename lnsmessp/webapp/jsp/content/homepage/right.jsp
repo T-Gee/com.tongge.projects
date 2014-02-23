@@ -6,13 +6,13 @@
   <!--begin right_search -->
 
 <!--   <div class="right_search"> -->
-<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 15px;"> -->
+<!--     <a href="<%=path%>/login.jspx" style="display: block; margin: 15px;"> -->
 <%--       <img src="<%=imagePath%>/x_100.png"> --%>
 <!--     </a> -->
-<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 15px;"> -->
+<!--     <a href="<%=path%>/login.jspx" style="display: block; margin: 15px;"> -->
 <%--       <img src="<%=imagePath%>/x_101.png"> --%>
 <!--     </a> -->
-<!--     <a href="http://www.bdasme.org/login.jspx" style="display: block; margin: 10px 15px;"> -->
+<!--     <a href="<%=path%>/login.jspx" style="display: block; margin: 10px 15px;"> -->
 <%--       <img src="<%=imagePath%>/x_102.png"> --%>
 <!--     </a> -->
 
@@ -23,57 +23,57 @@
 
 </div>
 <!--end right_channel-->
-<!--begin right_channel-->
-
+<!--begin right_channel
 <div class="right_channel">
 
   <div class="right_channel_top"></div>
   <div class="newList1">
     <div class="newsTitle1">
-      <a href="http://www.bdasme.org/zxzxtzgg/index.jhtml" class="spc" xtab="201">通知公告</a>
-      <a href="http://www.bdasme.org/zxzxzxkx/index.jhtml" xtab="202">中心快讯</a>
-      <a href="http://www.bdasme.org/zxzxqydt/index.jhtml" style="border-right: 0;" xtab="203">企业动态</a>
+      <a href="<%=path%>/zxzxtzgg/index.jhtml" class="spc" xtab="201">通知公告</a>
+      <a href="<%=path%>/zxzxzxkx/index.jhtml" xtab="202">中心快讯</a>
+      <a href="<%=path%>/zxzxqydt/index.jhtml" style="border-right: 0;" xtab="203">企业动态</a>
       <div class="clear"></div>
     </div>
     <ul id="201" class="new007">
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/4101.jhtml" title="关于开展第六届“博大贡献奖”评选活动的通知 "
+      <li>》&nbsp;<a href="<%=path%>/zxzxtzgg/4101.jhtml" title="关于开展第六届“博大贡献奖”评选活动的通知 "
           style="color: #000; font-weight: bold; font-size: 13px;">
           关于开展第六届“博大贡献奖”...<img src="<%=imagePath%>/new.gif">
         </a></li>
 
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/4002.jhtml" title=" 国经普办字〔2013〕8号关于共同做好第三次全国经济普查单位核查工作的通知">
+      <li>》&nbsp;<a href="<%=path%>/zxzxtzgg/4002.jhtml" title=" 国经普办字〔2013〕8号关于共同做好第三次全国经济普查单位核查工作的通知">
           国经普办字〔2013〕8号关于共...</a></li>
 
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/3965.jhtml" title="京政发[2013]1号关于开展第三次全国经济普查的通知">京政发[2013]1号关于开展第三...</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxtzgg/3965.jhtml" title="京政发[2013]1号关于开展第三次全国经济普查的通知">京政发[2013]1号关于开展第三...</a></li>
 
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxtzgg/3964.jhtml" title="国发〔2012〕60号国务院关于开展第三次全国经济普查的通知">国发〔2012〕60号国务院关于开...</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxtzgg/3964.jhtml" title="国发〔2012〕60号国务院关于开展第三次全国经济普查的通知">国发〔2012〕60号国务院关于开...</a></li>
 
-      <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxtzgg/index.jhtml" class="more"
+      <li style="border-bottom: none;"><a href="<%=path%>/zxzxtzgg/index.jhtml" class="more"
           target="_blank">更多...</a></li>
     </ul>
     <ul id="202" style="display: none;" class="new007">
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/3221.jhtml" title="高新技术企业知识产权、财务税收系列活动助推开发区小巨人培育工程"
+      <li>》&nbsp;<a href="<%=path%>/zxzxzxkx/3221.jhtml" title="高新技术企业知识产权、财务税收系列活动助推开发区小巨人培育工程"
           style="color: #000; font-weight: bold; font-size: 13px;">
           高新技术企业知识产权、财务税...<img src="<%=imagePath%>/new.gif">
         </a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/3101.jhtml" title="中小企业服务大厅举办第一期主题日咨询活动">中小企业服务大厅举办第一期主...</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/2682.jhtml"
+      <li>》&nbsp;<a href="<%=path%>/zxzxzxkx/3101.jhtml" title="中小企业服务大厅举办第一期主题日咨询活动">中小企业服务大厅举办第一期主...</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxzxkx/2682.jhtml"
           title="“创新·服务”开拓中小企业发展新路——“2012新区中小企业CEO论坛”将于本月14日启幕">“创新·服务”开拓中小企业发...</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxzxkx/2444.jhtml" title="中小企业融资系列培训">中小企业融资系列培训</a></li>
-      <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxzxkx/index.jhtml" class="more"
+      <li>》&nbsp;<a href="<%=path%>/zxzxzxkx/2444.jhtml" title="中小企业融资系列培训">中小企业融资系列培训</a></li>
+      <li style="border-bottom: none;"><a href="<%=path%>/zxzxzxkx/index.jhtml" class="more"
           target="_blank">更多...</a></li>
     </ul>
     <ul id="203" style="display: none;" class="new007">
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3666.jhtml" title="酒仙网销售业绩同比增三倍">酒仙网销售业绩同比增三倍</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3665.jhtml" title="创盈光电入围第五批国家节能服务公司备案名单">创盈光电入围第五批国家节能服...</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/3664.jhtml" title="中韩合资新能源车电池生产线有望落户开发区">中韩合资新能源车电池生产线有...</a></li>
-      <li>》&nbsp;<a href="http://www.bdasme.org/zxzxqydt/1071.jhtml" title="“绿色XXX－节能减排全民行动”启动暨第三届零碳音乐季开幕">“绿色XXX－节能减排全民行动...</a></li>
-      <li style="border-bottom: none;"><a href="http://www.bdasme.org/zxzxqydt/index.jhtml" class="more"
+      <li>》&nbsp;<a href="<%=path%>/zxzxqydt/3666.jhtml" title="酒仙网销售业绩同比增三倍">酒仙网销售业绩同比增三倍</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxqydt/3665.jhtml" title="创盈光电入围第五批国家节能服务公司备案名单">创盈光电入围第五批国家节能服...</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxqydt/3664.jhtml" title="中韩合资新能源车电池生产线有望落户开发区">中韩合资新能源车电池生产线有...</a></li>
+      <li>》&nbsp;<a href="<%=path%>/zxzxqydt/1071.jhtml" title="“绿色XXX－节能减排全民行动”启动暨第三届零碳音乐季开幕">“绿色XXX－节能减排全民行动...</a></li>
+      <li style="border-bottom: none;"><a href="<%=path%>/zxzxqydt/index.jhtml" class="more"
           target="_blank">更多...</a></li>
     </ul>
   </div>
   <div class="right_channel_bottom"></div>
-</div>
+</div>-->
+
 <!--end right_channel-->
 <!--begin right_channel-->
 
@@ -81,7 +81,7 @@
 
   <div class="right_channel_top"></div>
   <div class="active">
-    <a href="http://www.bdasme.org/jchdzxhd/2361.jhtml">
+    <a href="<%=path%>/jchdzxhd/2361.jhtml">
       <img src="<%=imagePath%>/12143700yw6w.jpg" style="width: 245px; height: 121px; margin-left: 12px;">
     </a>
     <div class="clear"></div>
@@ -109,10 +109,10 @@
     <div class="clear"></div>
     <div class="rili">
       <p class="rileft">
-        <a href="http://www.bdasme.org/jchdjdhg/index.jhtml">活动回顾</a>
+        <a href="#">活动回顾</a>
       </p>
       <p class="riright">
-        <a href="javascript:void(0);" id="clickButton">精彩活动日历展开</a>
+<!--         <a href="javascript:void(0);" id="clickButton">精彩活动日历展开</a> -->
       </p>
     </div>
     <div class="dialy" style="display: none;">
@@ -277,7 +277,7 @@
       <div class="scroll_inner_all">
         <div class="scroll_warpInner_5">
 
-          <a href="http://www.bdasme.org/jchdzxhd/3862.jhtml" target="_blank">
+          <a href="#" target="_blank">
             <ul>
               <li><b>德勤-亦庄2013高科技、高成长20强（2013）发布会</b></li>
               <li>时 间：2013-09-05 14:30:57</li>
@@ -287,57 +287,7 @@
             </ul>
           </a>
           <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3809.jhtml" target="_blank">
-            <ul>
-              <li><b>工商工作站正式入驻中小中心服务大厅</b></li>
-              <li>时 间：2013-06-26 14:00:41</li>
-              <li>地 点：生物医药园商务楼二层中小企业服务中心大厅</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3808.jhtml" target="_blank">
-            <ul>
-              <li><b>开发区2013年全国中小企业股份转让系统企业挂牌培训会</b></li>
-              <li>时 间：2013-05-16 13:30:19</li>
-              <li>地 点：博大大厦三层A301会议室</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3807.jhtml" target="_blank">
-            <ul>
-              <li><b>世界知识产权日（4.26）知识产权维权培训</b></li>
-              <li>时 间：2013-04-26 14:30:49</li>
-              <li>地 点：生物医药园商务楼3层多功能厅</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3806.jhtml" target="_blank">
-            <ul>
-              <li><b>2013年度中小企业专项资金申报培训会</b></li>
-              <li>时 间：2013-04-25 14:30:08</li>
-              <li>地 点：博大大厦A401会议室</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3805.jhtml" target="_blank">
-            <ul>
-              <li><b> 国家银河培训工程--“研发费用税收政策及会计处理” </b></li>
-              <li>时 间：2013-04-24 14:00:11</li>
-              <li>地 点：博大大厦一层报告厅</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3804.jhtml" target="_blank">
+          <a href="#" target="_blank">
             <ul>
               <li><b>高新企业税收政策座谈会</b></li>
               <li>时 间：2013-04-23 14:30:03</li>
@@ -347,7 +297,7 @@
             </ul>
           </a>
           <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3803.jhtml" target="_blank">
+          <a href="<%=path%>/jchdzxhd/3803.jhtml" target="_blank">
             <ul>
               <li><b>知识产权主题日活动——《如何撰写技术交底资料》</b></li>
               <li>时 间：2013-04-17 14:30:28</li>
@@ -357,277 +307,7 @@
             </ul>
           </a>
           <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3802.jhtml" target="_blank">
-            <ul>
-              <li><b>国家银河培训工程——《小企业会计准则》及企业汇算清缴专题培训</b></li>
-              <li>时 间：2013-04-18 09:00:37</li>
-              <li>地 点：生物医药园商务楼三层多功能厅</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3362.jhtml" target="_blank">
-            <ul>
-              <li><b>德勤-亦庄2013高科技、高成长20强评选</b></li>
-              <li>时 间：2013-06-17 13:52:35</li>
-              <li>地 点：</li>
-              <li>联系电话：56315312-625</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3781.jhtml" target="_blank">
-            <ul>
-              <li><b>融资新途径--嘉捷互助基金贷款</b></li>
-              <li>时 间：2013-03-19 09:00:38</li>
-              <li>地 点：博大大厦</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2563.jhtml" target="_blank">
-            <ul>
-              <li><b>中小企业金融系列培训第三场商业银行中小企业融资</b></li>
-              <li>时 间：2012-11-02 14:00:00</li>
-              <li>地 点：博大大厦A301会议室</li>
-              <li>联系电话： 13701363730；15801569937</li>
-              <li>会务热线： 56315312-625 67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2361.jhtml" target="_blank">
-            <ul>
-              <li><b>中小企业系列融资培训</b></li>
-              <li>时 间：2012-10-16 13:30:00</li>
-              <li>地 点：博大大厦（开发区管委会）A301室</li>
-              <li>联系电话：56315316</li>
-              <li>会务热线：56315312转625 欧鹏</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2314.jhtml" target="_blank">
-            <ul>
-              <li><b>《小企业会计准则》第四期专题培训</b></li>
-              <li>时 间：2012-09-20 08:30:00</li>
-              <li>地 点：XXX亦庄生物医药园3层多功能厅</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1990.jhtml" target="_blank">
-            <ul>
-              <li><b>新区多家明星企业参展中国生物产业大会</b></li>
-              <li>时 间：2012-08-28 13:53:07</li>
-              <li>地 点：</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1989.jhtml" target="_blank">
-            <ul>
-              <li><b>京交会--“服务贸易：新视野、新机遇、新发展”</b></li>
-              <li>时 间：2012-08-02 13:54:26</li>
-              <li>地 点：XXX</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1988.jhtml" target="_blank">
-            <ul>
-              <li><b>2012年XXX经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
-              <li>时 间：2012-05-10 09:00:00</li>
-              <li>地 点：博大大厦A301会议室</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-
-
-
         </div>
-        <div class="scroll_warpInner_6">
-
-          <a href="http://www.bdasme.org/jchdzxhd/3862.jhtml" target="_blank">
-            <ul>
-              <li><b>德勤-亦庄2013高科技、高成长20强（2013）发布会</b></li>
-              <li>时 间：2013-09-05 14:30:57</li>
-              <li>地 点：博大大厦A401</li>
-              <li>联系电话：56315312-625</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3809.jhtml" target="_blank">
-            <ul>
-              <li><b>工商工作站正式入驻中小中心服务大厅</b></li>
-              <li>时 间：2013-06-26 14:00:41</li>
-              <li>地 点：生物医药园商务楼二层中小企业服务中心大厅</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3808.jhtml" target="_blank">
-            <ul>
-              <li><b>开发区2013年全国中小企业股份转让系统企业挂牌培训会</b></li>
-              <li>时 间：2013-05-16 13:30:19</li>
-              <li>地 点：博大大厦三层A301会议室</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3807.jhtml" target="_blank">
-            <ul>
-              <li><b>世界知识产权日（4.26）知识产权维权培训</b></li>
-              <li>时 间：2013-04-26 14:30:49</li>
-              <li>地 点：生物医药园商务楼3层多功能厅</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3806.jhtml" target="_blank">
-            <ul>
-              <li><b>2013年度中小企业专项资金申报培训会</b></li>
-              <li>时 间：2013-04-25 14:30:08</li>
-              <li>地 点：博大大厦A401会议室</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3805.jhtml" target="_blank">
-            <ul>
-              <li><b> 国家银河培训工程--“研发费用税收政策及会计处理” </b></li>
-              <li>时 间：2013-04-24 14:00:11</li>
-              <li>地 点：博大大厦一层报告厅</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3804.jhtml" target="_blank">
-            <ul>
-              <li><b>高新企业税收政策座谈会</b></li>
-              <li>时 间：2013-04-23 14:30:03</li>
-              <li>地 点：博大大厦A304</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3803.jhtml" target="_blank">
-            <ul>
-              <li><b>知识产权主题日活动——《如何撰写技术交底资料》</b></li>
-              <li>时 间：2013-04-17 14:30:28</li>
-              <li>地 点：生物医药园商务楼二层中小企业服务中心大厅</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3802.jhtml" target="_blank">
-            <ul>
-              <li><b>国家银河培训工程——《小企业会计准则》及企业汇算清缴专题培训</b></li>
-              <li>时 间：2013-04-18 09:00:37</li>
-              <li>地 点：生物医药园商务楼三层多功能厅</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3362.jhtml" target="_blank">
-            <ul>
-              <li><b>德勤-亦庄2013高科技、高成长20强评选</b></li>
-              <li>时 间：2013-06-17 13:52:35</li>
-              <li>地 点：</li>
-              <li>联系电话：56315312-625</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/3781.jhtml" target="_blank">
-            <ul>
-              <li><b>融资新途径--嘉捷互助基金贷款</b></li>
-              <li>时 间：2013-03-19 09:00:38</li>
-              <li>地 点：博大大厦</li>
-              <li>联系电话：56315312</li>
-              <li>会务热线：4008998960</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2563.jhtml" target="_blank">
-            <ul>
-              <li><b>中小企业金融系列培训第三场商业银行中小企业融资</b></li>
-              <li>时 间：2012-11-02 14:00:00</li>
-              <li>地 点：博大大厦A301会议室</li>
-              <li>联系电话： 13701363730；15801569937</li>
-              <li>会务热线： 56315312-625 67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2361.jhtml" target="_blank">
-            <ul>
-              <li><b>中小企业系列融资培训</b></li>
-              <li>时 间：2012-10-16 13:30:00</li>
-              <li>地 点：博大大厦（开发区管委会）A301室</li>
-              <li>联系电话：56315316</li>
-              <li>会务热线：56315312转625 欧鹏</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/2314.jhtml" target="_blank">
-            <ul>
-              <li><b>《小企业会计准则》第四期专题培训</b></li>
-              <li>时 间：2012-09-20 08:30:00</li>
-              <li>地 点：XXX亦庄生物医药园3层多功能厅</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1990.jhtml" target="_blank">
-            <ul>
-              <li><b>新区多家明星企业参展中国生物产业大会</b></li>
-              <li>时 间：2012-08-28 13:53:07</li>
-              <li>地 点：</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1989.jhtml" target="_blank">
-            <ul>
-              <li><b>京交会--“服务贸易：新视野、新机遇、新发展”</b></li>
-              <li>时 间：2012-08-02 13:54:26</li>
-              <li>地 点：XXX</li>
-              <li>联系电话：</li>
-              <li>会务热线：</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-          <a href="http://www.bdasme.org/jchdzxhd/1988.jhtml" target="_blank">
-            <ul>
-              <li><b>2012年XXX经济技术开发区新三板座谈会--80余名高新技术企业领袖共话发展</b></li>
-              <li>时 间：2012-05-10 09:00:00</li>
-              <li>地 点：博大大厦A301会议室</li>
-              <li>联系电话：67857682</li>
-              <li>会务热线：67857682</li>
-            </ul>
-          </a>
-          <div class="clear" style="height: 15px; border-bottom: 1px dotted #545454; margin-bottom: 15px"></div>
-
-
-
-        </div>
-
       </div>
     </div>
 
@@ -637,7 +317,7 @@
   <div class="right_channel_bottom"></div>
 </div>
 <!--end right_channel-->
-<!--beginright_channel-->
+<!--beginright_channel
 
 <div class="right_channel">
 
@@ -650,7 +330,7 @@
     </div>
     <div class="report">
       您的企业迫切需要解决的问题？<br>
-      <form style="display: inline" name="votes" action="http://www.bdasme.org/vote.jspx" method="post" target="_blank">
+      <form style="display: inline" name="votes" action="<%=path%>/vote.jspx" method="post" target="_blank">
         <input type="hidden" name="voteId" value="22"> <input type="radio" class="margin_l_15" name="itemIds"
           value="29" checked="checked"> 资金问题<br> <input type="radio" class="margin_l_15" name="itemIds"
           value="30"> 管理问题<br> <input type="radio" class="margin_l_15" name="itemIds" value="31">
@@ -662,7 +342,7 @@
     </div>
   </div>
   <div class="right_channel_bottom"></div>
-</div>
+</div>-->
 <!--end right_channel -->
 
 

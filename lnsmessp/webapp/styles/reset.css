@@ -8,15 +8,20 @@ utf-8
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: "å®‹ä½“";
+	text-align: center;
+	font-family: "ËÎÌå";
 	font-size: 12px;
+	background-color: gray;
 }
 
 #container {
 	width: 100%;
 	min-width: 1000px;
-	background: url(../images/bg_head.png) center 30px no-repeat;
+/*   background: url(../images/bg_head.png) center 30px no-repeat; */
+  background: url(../images/my/bg_head.png) center 30px no-repeat;
+	background-color: white;
 	overflow: hidden;
+	text-align: left;
 }
 
 h1,h2,h3,h4,h5,h6,dd,dt,ul,li,span,p,dl,a,th,td,blockquote,form,fieldse

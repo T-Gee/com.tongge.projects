@@ -5,7 +5,7 @@
 <div class="clear"></div>
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt;金融机构大厅分配
 </div>
 <form style="display: inline" action="<%=path%>/VIP.do?method=allotCompnayAccepct" method="post" id="jvForm"

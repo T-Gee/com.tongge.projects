@@ -18,7 +18,7 @@
         <a href="<%=path%>/jsp/content/contact/index.jsp">联系我们</a>
       </dd>
 <!--       <dd style="border-right: 0;"> -->
-<!--         <a href="http://www.bdasme.org/guestbook.jspx">帮助中心</a> -->
+<!--         <a href="<%=path%>/guestbook.jspx">帮助中心</a> -->
 <!--       </dd> -->
       <dt class="clear"></dt>
     </dl>

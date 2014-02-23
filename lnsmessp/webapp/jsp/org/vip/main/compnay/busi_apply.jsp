@@ -4,7 +4,7 @@
 <div class="clear"></div>
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt; 会员中心-业务办理--申请服务
 </div>
 <div class="applica_title" style="margin-bottom: 2px;">申请服务</div>

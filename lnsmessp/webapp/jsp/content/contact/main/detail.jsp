@@ -23,14 +23,14 @@
     <p>联系电话：4008 998 960&nbsp;&nbsp;&nbsp; 56315316</p>
     <p>
       网址：
-      <a href="http://www.bdasme.org/">www.bdasme.org</a>
+      <a href="<%=path%>/">www.bdasme.org</a>
     </p>
     <p>&nbsp;</p>
     <p>2.&nbsp; 服务中心亦城国际服务窗口：XXX经济技术开发区荣华路亦城国际大厦2层开发区行政服务中心公共服务大厅中小企业窗口，邮编100176</p>
     <p>&nbsp;联系电话：67857681&nbsp;&nbsp; &nbsp;67857682</p>
     <p>
       &nbsp;网址：
-      <a href="http://www.bdasme.org/">www.bdasme.org</a>
+      <a href="<%=path%>/">www.bdasme.org</a>
       <br> &nbsp;&nbsp;
     </p>
     <p></p>

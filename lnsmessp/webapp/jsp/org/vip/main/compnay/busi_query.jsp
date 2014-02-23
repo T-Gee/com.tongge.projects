@@ -6,7 +6,7 @@
 <div class="clear"></div>
 <div class="current">
   您的位置：
-  <a href="http://www.bdasme.org/">首页</a>
+  <a href="<%=path%>/">首页</a>
   &gt; 企业会员中心--业务办理--查询服务
 </div>
 <div class="clear" style="height: 20px;"></div>
@@ -40,19 +40,19 @@
 <div class="clear" style="height: 50px;"></div>
 <!-- <dl class="back_ground"> -->
 <!--   <dd> -->
-<!--     <a href="http://www.bdasme.org/member/bussinessSelectzc.jspx">政策服务</a> -->
+<!--     <a href="<%=path%>/member/bussinessSelectzc.jspx">政策服务</a> -->
 <!--   </dd> -->
 <!--   <dd> -->
-<!--     <a href="http://www.bdasme.org/member/bussinessSelectjr.jspx">金融服务</a> -->
+<!--     <a href="<%=path%>/member/bussinessSelectjr.jspx">金融服务</a> -->
 <!--   </dd> -->
 <!--   <dd> -->
-<!--     <a href="http://www.bdasme.org/member/bussinessSelectkj.jspx">科技服务</a> -->
+<!--     <a href="<%=path%>/member/bussinessSelectkj.jspx">科技服务</a> -->
 <!--   </dd> -->
 <!--   <dd> -->
-<!--     <a href="http://www.bdasme.org/member/bussinessSelectsw.jspx">商务服务</a> -->
+<!--     <a href="<%=path%>/member/bussinessSelectsw.jspx">商务服务</a> -->
 <!--   </dd> -->
 <!--   <dd> -->
-<!--     <a href="http://www.bdasme.org/member/bussinessSelectqt.jspx">其他服务</a> -->
+<!--     <a href="<%=path%>/member/bussinessSelectqt.jspx">其他服务</a> -->
 <!--   </dd> -->
 <!-- </dl> -->
 <!-- <div class="clear"></div> -->
