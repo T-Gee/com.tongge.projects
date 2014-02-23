@@ -1,0 +1,25 @@
+.lineBorder_1{ clear:both; border-bottom:1px dotted #b3b5b3;  height:0; overflow:hidden; margin-bottom:15px; width:400px; margin-left:15px; margin-top:5px;}
+.logo_gongsi{ width:630px; height:auto; text-align:center; color:#000;font:bold 18px/134px  "Î¢ÈíÑÅºÚ","ºÚÌå" border;}
+.logo_gongsi img{ vertical-align:middle;}
+.introduce{ width:630px; margin-left:25px;}
+.intuoduce_list{font:bold 14px  "Î¢ÈíÑÅºÚ","ºÚÌå"; margin-left:10px;}
+.main_product{ margin-top:30px; line-height:20px; margin-bottom:40px; margin-left:25px;}
+.picture_introduce{ width:630px; height:auto; line-height:20px; text-indent:2em; font-family:"ËÎÌå" ,"´ÖÌå"; font-size:12px;}
+.picture_introduce img{ float:left; margin:0 10px 10px 0; }
+.Product_catalog{ margin-top:20px; margin-bottom:60px; margin-left:25px; width:630px; height:auto;}
+.block{ width:630px; height:auto;}
+.Products_block{ margin-top:10px; width:170px; height:auto;  float:left; margin-right:40px;}
+.Products_block1{ margin-top:10px; width:170px; height:auto;  float:left; }
+.product_block_pic{ width:170px; height:65px; }
+.product_block_buttom{ width:170px; height:20px; background-color:#767676; margin-top:3px; position:relative; color:#FFF; font-size:14px; line-height:20px;}
+.product_block_buttom img{ margin-left:5px; }
+.product_block_content{ width:170px; margin-top:5px;}
+.channel_list_styleThree{ width:255px; height:auto; border-left:1px dotted #b3b5b3;border-top:1px dotted #b3b5b3; margin-top:20px;}
+.lineBorder_3{ color:#c0c0c0;width:175px;border-bottom:1px solid #c0c0c0; margin-top:10px;}
+.lineBorder_4{ clear:both; border-bottom:1px dotted #131313;  height:500px; overflow:hidden;  width:0; float:left;}
+.rigthsearch { color:#000;font:bold 14px "Î¢ÈíÑÅºÚ","ºÚÌå" border; margin-top:20px; margin-left:12px; margin-bottom:5px; line-height:20px;}
+.rightsideba_buttom{ width:270px; height:25px;  background-color:#368bde; font-size:14px; color:#FFF; font-family:"ËÎÌå"; margin-bottom:10px; text-indent:15px;line-height:25px; font-weight:800;}
+.right_content_list{ width:240px; line-height:28px; border-bottom:1px solid #d6dce8; color:#0660ba; border-left-width:25px;}
+.right_content_list img{ vertical-align:middle; margin-left:15px; margin-right:8px;}
+.line{ margin-left:25px; color:#d9dadf; width:240px;}
+/*---IE bug-----*/;

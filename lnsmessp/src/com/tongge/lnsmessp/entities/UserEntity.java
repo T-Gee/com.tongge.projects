@@ -164,8 +164,8 @@ public class UserEntity {
     }
 
     public String toDOMString() {
-        return "<li><a href=" + Constant.DOMAIN + "orgservices.do?method=showdetails&id='" + id
-                + " target='_blank' title='" + title + "'>" + title + "</a></li>";
+        return "<li><a href='" + Constant.DOMAIN + "orgservices.do?method=showdetails&id=" + id
+                + "&title="+title+"' target='_blank' title='" + title + "'>" + title + "</a></li>";
     }
 
     public Date getCreatedate() {

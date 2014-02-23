@@ -18,10 +18,7 @@
 
 <script type="text/javascript">
 <!--//-->
-	$.get('<%=path%>/orgservices.do?method=showdoms&date='
-			+ new Date(),
-			null, function(data, textStatus) {
-		debugger;
+	$.get('<%=path%>/orgservices.do?method=showdoms&date='+ new Date(),null, function(data, textStatus) {
 		  var d = document.getElementById("x");
 		  d.innerHTML = data;
 	});

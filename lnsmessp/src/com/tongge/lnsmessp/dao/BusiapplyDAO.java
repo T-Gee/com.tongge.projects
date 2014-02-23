@@ -10,4 +10,7 @@ public interface BusiapplyDAO {
 
     List<BusiapplyEntity> queryObjectsByTitleOrigin(String title, int origin);
 
+    BusiapplyEntity queryObjectsById(String id);
+
+
 }

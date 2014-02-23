@@ -12,27 +12,27 @@
         <a href="<%=path%>/VIP.do?method=compnayacceptlist">企业申请列表</a>
       </p>
       <p xid="010102">
-        <a href="<%=path%>/VIP.do?method=serviceslist">机构服务列表</a>
+        <a href="<%=path%>/VIP.do?method=servicesSelect">机构服务列表</a>
       </p>
     </li>
-    <li class="leve1 spc" xid="0102"><a href="#">服务机构推荐</a></li>
-    <li class="leve2" id="0102">
-      <p xid="010103">
-        <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=0">政策服务机构推荐</a>
-      </p>
-      <p xid="010104">
-        <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=1">金融服务机构推荐</a>
-      </p>
-      <p xid="010105">
-        <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=2">科技服务机构推荐</a>
-      </p>
-      <p xid="010106">
-        <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=3">商务服务机构推荐</a>
-      </p>
-      <p xid="010107">
-        <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=4">其他服务机构推荐</a>
-      </p>
-    </li>
+<!--     <li class="leve1 spc" xid="0102"><a href="#">服务机构推荐</a></li> -->
+<!--     <li class="leve2" id="0102"> -->
+<!--       <p xid="010103"> -->
+<%--         <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=0">政策服务机构推荐</a> --%>
+<!--       </p> -->
+<!--       <p xid="010104"> -->
+<%--         <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=1">金融服务机构推荐</a> --%>
+<!--       </p> -->
+<!--       <p xid="010105"> -->
+<%--         <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=2">科技服务机构推荐</a> --%>
+<!--       </p> -->
+<!--       <p xid="010106"> -->
+<%--         <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=3">商务服务机构推荐</a> --%>
+<!--       </p> -->
+<!--       <p xid="010107"> -->
+<%--         <a href="<%=path%>/VIP.do?method=servicesRecommCenter&flag=4">其他服务机构推荐</a> --%>
+<!--       </p> -->
+<!--     </li> -->
     <li class="leve1" xid="0103"><a href="#">服务大厅账号管理</a></li>
     <li class="leve2" id="0103">
       <p xid="010108">
@@ -46,13 +46,22 @@
   <div class="clear" style="height: 90px;"></div>
 </div>
 <script type="text/javascript">
-	$(function() {
-		$(".leve1").switchTab({
-			commonTarget : ".leve2",
-			chooseStatus : "0102" //这里放置页面载入时打开菜单的xid数值
-		});
-	});
-	function refresh() {
-		$("#guestbookCaptcha").attr("src", "/captcha.svl?d=" + new Date());
-	}
+	
+	 $(function() {
+	        $(".leve1").switchTab({
+	          commonTarget : ".leve2",
+	          chooseStatus : "0102" //这里放置页面载入时打开菜单的xid数值
+	        });
+	      });
+	      $(document).ready(function(){
+	        $(".channel_list .list_ul li .spc1").removeClass("spc1");
+	        $(".channel_list .list_ul li.leve2").hide();
+	        $(".channel_list .list_ul li a").each(function(index,a){
+	            if(a.href.indexOf('method=<%=request.getParameter("method")%>') > -1) {
+												$(a).parent().parent().show();
+												$(a).parent().addClass("spc1");
+												return;
+											}
+										});
+					});
 </script>

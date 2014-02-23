@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
-<%@ page import="com.tongge.lnsmessp.entities.ServicesdetailEntity"%>
+<%@ page import="com.tongge.lnsmessp.entities.CompnaydetailEntity"%>
 <%@ page import="com.tongge.lnsmessp.common.Constant"%>
 
 <script type="text/javascript" src="<%=path%>/scripts/switch.js"></script>
@@ -30,7 +30,7 @@
         <%
             List entities = (List) request.getAttribute("entities");
             for (int i = 0; i < entities.size(); i++) {
-                ServicesdetailEntity entity = (ServicesdetailEntity) entities.get(i);
+                CompnaydetailEntity entity = (CompnaydetailEntity) entities.get(i);
         %>
         <tr>
           <td align="center"><img alt="" src="<%=Constant.FILE_SERVER_PATH%>/<%= entity.getImgpath()%>" width="50px" height="70px" /></td>

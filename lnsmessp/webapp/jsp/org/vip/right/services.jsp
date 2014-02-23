@@ -30,7 +30,7 @@
         <a href="<%=path%>/VIP.do?method=toUpdPwd">修改密码</a>
       </p>
       <p xid="010106">
-        <a href="<%=path%>/VIP.do?method=updAccount">编辑账号信息</a>
+        <a href="<%=path%>/VIP.do?method=toUpdAccount">编辑账号信息</a>
       </p>
       <p xid="010107">
         <a href="<%=path%>/login.do?op=logout">退出登录</a>
@@ -52,11 +52,11 @@
         });
       });
       $(document).ready(function(){
-        $(".channel_list .list_ul li .spc1").removeClass("spc1");
+    	  $(".channel_list .list_ul li .spc1").removeClass("spc1");
+    	  $(".channel_list .list_ul li.leve2").hide();
         $(".channel_list .list_ul li a").each(function(index,a){
-        	  debugger
             if(a.href.indexOf('method=<%=request.getParameter("method")%>') > -1) {
-							$(a).parent().parent().prev().click();
+            	$(a).parent().parent().show();
 							$(a).parent().addClass("spc1");
 							return;
 						}

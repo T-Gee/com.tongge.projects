@@ -46,16 +46,17 @@ public class VIPServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
         request.setCharacterEncoding(Constant.CHARSET);
+        String method = request.getParameter("method");
         UserEntity currentuser = (UserEntity) request.getSession().getAttribute("CurrentUser");
-        if ("center".equals(request.getParameter("method"))) {
+        if ("center".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("toUpdPwd".equals(request.getParameter("method"))) {
+        } else if ("toUpdPwd".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("updPwd".equals(request.getParameter("method"))) {
+        } else if ("updPwd".equals(method)) {
             request.removeAttribute("msg");
             String origPwd = request.getParameter("origPwd");
             String newPwd = request.getParameter("newPwd");
@@ -89,47 +90,94 @@ public class VIPServlet extends HttpServlet {
             forCompnay(currentuser, request, response);
         } else if ("services".equals(currentuser.getKind())) {
             forServices(currentuser, request, response);
+        } else if ("person".equals(currentuser.getKind())) {
+            forPerson(currentuser, request, response);
         }
 
     }
 
+    private void forPerson(UserEntity currentuser, HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String method = request.getParameter("method");
+        if ("compnayacceptlist".equals(method)) {
+            compnay.busiApplyQuery(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp?sid="
+                    + System.currentTimeMillis());
+            dispatcher.forward(request, response);
+            return;
+        } else if ("servicesSelect".equals(method)) {
+            services.servicesSelect(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp?sid="
+                    + System.currentTimeMillis());
+            dispatcher.forward(request, response);
+            return;
+        } else if ("toAllotCompnayAccepct".equals(method)) {
+            services.servicesSelect(request, response);
+            compnay.busiApplyQueryById(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp?sid="
+                    + System.currentTimeMillis());
+            dispatcher.forward(request, response);
+            return;
+        } else if ("allotCompnayAccepct".equals(method)) {
+            String servicesId = request.getParameter("servicesId");
+            if (StringUtils.isBlank(servicesId)) {
+                request.setAttribute("msg", "服务机构不能为空！");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/VIP.do?method=toAllotCompnayAccepct&sid="
+                        + System.currentTimeMillis());
+                dispatcher.forward(request, response);
+                return;
+            }
+
+            person.allotCompnayAccepct(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/VIP.do?method=compnayacceptlist&sid="
+                    + System.currentTimeMillis());
+            dispatcher.forward(request, response);
+            return;
+        }
+    }
+
     private void forServices(UserEntity currentuser, HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if ("servicesSelect".equals(request.getParameter("method"))) {
-            services.servicesSelect(request,response);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
+        String method = request.getParameter("method");
+        if ("servicesSelect".equals(method)) {
+            services.servicesSelect(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp?sid="
+                    + System.currentTimeMillis());
             dispatcher.forward(request, response);
             return;
-        } else if ("servicesStatusChange".equals(request.getParameter("method"))) {
+        } else if ("servicesStatusChange".equals(method)) {
             // compnay.busiApply(request, response);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp?sid="
+                    + System.currentTimeMillis());
             dispatcher.forward(request, response);
             return;
-        } else if ("toProvideServcies".equals(request.getParameter("method"))) {
+        } else if ("toProvideServcies".equals(method)) {
             // compnay.busiQuery(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("provideServices".equals(request.getParameter("method"))) {
-            compnay.provideServices(request, response);
+        } else if ("provideServices".equals(method)) {
+            services.provideServices(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("VIP.do?method=toProvideServcies");
+            dispatcher.forward(request, response);
+            return;
+        } else if ("forProvideServiceInfo".equals(method)) {
+            services.queryServicedetail(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        }else if ("forProvideServiceInfo".equals(request.getParameter("method"))) {
-            // compnay.busiQuery(request, response);
+        } else if ("forProvideServiceInfodo".equals(method)) {
+            // FileUploadServlet fileUploadServlet = new FileUploadServlet();
+            // fileUploadServlet.doPost(request, response);
+            services.provideServiceInfo(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("VIP.do?method=forProvideServiceInfo");
+            dispatcher.forward(request, response);
+            return;
+        } else if ("toUpdAccount".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        }else if ("forProvideServiceInfodo".equals(request.getParameter("method"))) {
-            // compnay.busiQuery(request, response);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
-            dispatcher.forward(request, response);
-            return;
-        } else if ("toUpdAccount".equals(request.getParameter("method"))) {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
-            dispatcher.forward(request, response);
-            return;
-        } else if ("updAccount".equals(request.getParameter("method"))) {
+        } else if ("updAccount".equals(method)) {
             UserEntity user = new UserEntity();
             user.setId(UUIDGenerator.getUUID());
             user.setTitle(StringUtils.nvl(request.getParameter("title"), user.getUsername()));
@@ -146,7 +194,7 @@ public class VIPServlet extends HttpServlet {
             user.setCompanyLeader(StringUtils.nvl(request.getParameter("companyLeader"), ""));
             userDAO.updUser(user);
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("VIP.do?method=updAccount");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
         }
@@ -154,44 +202,45 @@ public class VIPServlet extends HttpServlet {
 
     private void forCompnay(UserEntity currentuser, HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if ("toBusiApply".equals(request.getParameter("method"))) {
+        String method = request.getParameter("method");
+        if ("toBusiApply".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("busiApply".equals(request.getParameter("method"))) {
+        } else if ("busiApply".equals(method)) {
             compnay.busiApply(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("VIP.do?method=compnayBusiQuery");
             dispatcher.forward(request, response);
             return;
-        } else if ("compnayBusiQuery".equals(request.getParameter("method"))) {
+        } else if ("compnayBusiQuery".equals(method)) {
             compnay.busiQuery(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("reommendedList".equals(request.getParameter("method"))) {
+        } else if ("reommendedList".equals(method)) {
             services.query(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("forEnterInfo".equals(request.getParameter("method"))) {
+        } else if ("forEnterInfo".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("forEnterInfodo".equals(request.getParameter("method"))) {
+        } else if ("forEnterInfodo".equals(method)) {
             compnay.saveCompnayDetails(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("infolist".equals(request.getParameter("method"))) {
+        } else if ("infolist".equals(method)) {
             compnay.infoList(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("toUpdAccount".equals(request.getParameter("method"))) {
+        } else if ("toUpdAccount".equals(method)) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/vip/index.jsp");
             dispatcher.forward(request, response);
             return;
-        } else if ("updAccount".equals(request.getParameter("method"))) {
+        } else if ("updAccount".equals(method)) {
             UserEntity user = new UserEntity();
             user.setId(UUIDGenerator.getUUID());
             user.setTitle(StringUtils.nvl(request.getParameter("title"), user.getUsername()));

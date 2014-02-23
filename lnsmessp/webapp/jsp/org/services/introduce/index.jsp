@@ -24,11 +24,11 @@
       <div id='content' style='width: 970px; height: 489px; margin: 0px auto'>
         <div class="content content2">
           <div class="left" style="width: 650px;">
-            <jsp:include page="main/list.jsp"></jsp:include>
+            <jsp:include page="main/detail.jsp"></jsp:include>
           </div>
           <div class="right">
             <div class="clear" style="height: 68px;"></div>
-            <jsp:include page="../component/servshow.jsp"></jsp:include>
+            <jsp:include page="../../../content/component/servshow.jsp"></jsp:include>
             <div class="clear"></div>
           </div>
         </div>

@@ -1,12 +1,11 @@
 package com.tongge.lnsmessp.entities;
 
-public class ServicesdetailEntity {
+public class CompnaydetailEntity {
     
     private int id;
     private String imgpath;
     private String introduce;
     private String business;
-    private String serviceid;
     
     public int getId() {
         return id;
@@ -38,14 +37,6 @@ public class ServicesdetailEntity {
 
     public void setBusiness(String business) {
         this.business = business;
-    }
-
-    public String getServiceid() {
-        return serviceid;
-    }
-
-    public void setServiceid(String serviceid) {
-        this.serviceid = serviceid;
     }
     
     

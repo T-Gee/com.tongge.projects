@@ -3,7 +3,7 @@
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.BusiapplyEntity"%>
 <div class="clear"></div>
-<div class="current">您的位置：首页&gt;会员中心</div>
+<div class="current">您的位置：首页&gt;会员中心&gt;发布机构信息</div>
 <div class="reg_one" style="margin-top: 30px;">
   <script type="text/javascript">
 			//上传图片
@@ -86,13 +86,13 @@
           <td align="left" width="506">&nbsp; 
           <img id="preImg0" style="display: none;"> 
           <span id="ufc0" style="position: relative"> 
-          <input id="uploadImgPath0" name="typeImg" size="14" type="text">
-              <input class="member_button" value="浏览..." type="button"> 
-              <input onchange="$('#uploadImgPath0').val(this.value)" size="14" id="uploadFile0"
+          <input id="liulan" name="liulan" size="14" type="text" value="${entity.imgpath}"/>
+          <input class="member_button" value="浏览..." type="button"> 
+          <input onchange="$('#liulan').val(this.value)" size="14" id="uploadFile0"
                 style="height: 24px; opacity: 0; filter: alpha(opacity = 0); position: absolute; right: 5px; top: -5px; *top: 50px; *left: 10; _left: 0px;"
-                type="file">
+                type="file" name="filename">
           </span> 
-<!--           <input value="上传" onclick="upload(0);" class="member_button" type="button">  -->
+          <input value="上传" onclick="upload(0);" class="member_button" type="button"> 
 <!--           <span style="display: none;"> 宽: <input id="zoomWidth0" size="5" type="text"> 高: <input -->
 <!--                 id="zoomHeight0" size="5" type="text"> -->
 <!--           </span> <input value="剪裁" onclick="imgCut(0);" class="member_button" type="hidden"> <input value="预览" -->
@@ -102,13 +102,13 @@
         <tr style="height: 5px;"></tr>
         <tr style="height: 40px;">
           <td align="right">机构介绍：</td>
-          <td>&nbsp;<textarea style="width: 410px; height: 70px;" name="txt" class="required"></textarea>
+          <td>&nbsp;<textarea style="width: 410px; height: 70px;" name="txt" class="required" >${entity.introduce}</textarea>
           </td>
         </tr>
         <tr style="height: 5px;"></tr>
         <tr style="height: 190px;" valign="top">
           <td align="right">服务介绍：</td>
-          <td>&nbsp;<textarea style="width: 410px; height: 180px;" name="txt1"></textarea>
+          <td>&nbsp;<textarea style="width: 410px; height: 180px;" name="txt1" >${entity.business}</textarea>
           </td>
         </tr>
       </tbody>

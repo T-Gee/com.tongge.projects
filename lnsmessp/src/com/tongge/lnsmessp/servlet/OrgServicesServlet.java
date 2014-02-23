@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.tongge.lnsmessp.action.OrgServicesAction;
+import com.tongge.lnsmessp.action.ServicesAction;
 import com.tongge.lnsmessp.common.Constant;
 
 /**
@@ -32,16 +33,14 @@ public class OrgServicesServlet extends HttpServlet {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-            // RequestDispatcher dispatcher =
-            // request.getRequestDispatcher("/jsp/content/policy/index.jsp");
-            // dispatcher.forward(request, response);
             return;
         } else if ("showdetails".equals(request.getParameter("method"))) {
+            services.queryByID(request, response);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/org/services/introduce/index.jsp");
             dispatcher.forward(request, response);
         }
     }
-
+    private ServicesAction services = new ServicesAction();
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */

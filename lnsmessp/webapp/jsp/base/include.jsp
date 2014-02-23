@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="<%=path%>/styles/dialy.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/styles/calendar.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/styles/fuceng.css">
+<link rel="stylesheet" type="text/css" href="<%=path%>/styles/columns.css">
 <script type="text/javascript" language="javascript" src="<%=path%>/scripts/jquery.js"></script>
 <script type="text/javascript" language="javascript" src="<%=path%>/scripts/main.js"></script>
 <script type="text/javascript" language="javascript" src="<%=path%>/scripts/front.js"></script>

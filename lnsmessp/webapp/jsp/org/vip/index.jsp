@@ -31,12 +31,12 @@
             %>
             <jsp:include page="main/detail.jsp"></jsp:include>
             <%
-                } else if ("compnay".equals(kind)) {
-                    if ("toUpdPwd".equals(method)) {
+                } else if ("toUpdPwd".equals(method)) {
             %>
             <jsp:include page="main/updPwd.jsp"></jsp:include>
             <%
-                } else if ("toBusiApply".equals(method)) {
+                } else if ("compnay".equals(kind)) {
+                    if ("toBusiApply".equals(method)) {
             %>
             <jsp:include page="main/compnay/busi_apply.jsp"></jsp:include>
             <%
@@ -80,11 +80,23 @@
             <%
                 } else if ("toUpdAccount".equals(method)) {
             %>
-            <jsp:include page="main/services/updAccount.jsp"></jsp:include>
+            <jsp:include page="main/services/services.jsp"></jsp:include>
             <%
                 }
                 } else if ("person".equals(kind)) {
-
+                    if ("compnayacceptlist".equals(method)) {
+            %>
+            <jsp:include page="main/person/compnayacceptlist.jsp"></jsp:include>
+            <%
+                } else if ("servicesSelect".equals(method)) {
+            %>
+            <jsp:include page="main/services/servicesSelect.jsp"></jsp:include>
+            <%
+                } else if ("toAllotCompnayAccepct".equals(method)) {
+            %>
+            <jsp:include page="main/person/allotCompnayAccepct.jsp"></jsp:include>
+            <%
+                }
                 }
             %>
             <div class="clear" style="height: 20px"></div>

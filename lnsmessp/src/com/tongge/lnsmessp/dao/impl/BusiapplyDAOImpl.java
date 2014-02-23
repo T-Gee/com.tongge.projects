@@ -86,4 +86,44 @@ public class BusiapplyDAOImpl implements BusiapplyDAO {
         return reuslt;
     }
 
+    public BusiapplyEntity queryObjectsById(String id) {
+        List<BusiapplyEntity> reuslt = new ArrayList<BusiapplyEntity>();
+        Connection conn = null;
+        try {
+            // check 唯一性
+            conn = JDBCUtils.getConn();
+            String ssql = "select * from busiapply where 1=1  ";
+            if (!StringUtils.isBlank(id)) {
+                ssql += "and busicode = " + id+ " ";
+            }
+            System.out.println(ssql);
+            PreparedStatement pstmt = conn.prepareStatement(ssql);
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                BusiapplyEntity entity = new BusiapplyEntity();
+                entity.setBusicode(rs.getInt("busicode"));
+                entity.setUserid(rs.getString("userid"));
+                entity.setTitle(rs.getString("title"));
+                entity.setShortTitle(rs.getString("shortTitle"));
+                entity.setContacts(rs.getString("contacts"));
+                entity.setContactMobile(rs.getString("contactMobile"));
+                entity.setDescription(rs.getString("description"));
+                entity.setOrigin(rs.getInt("origin"));
+                entity.setLastupddate(rs.getDate("lastupddate"));
+                entity.setProccess(rs.getString("proccess"));
+                entity.setIsValuing(rs.getString("isValuing"));
+                return entity;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                JDBCUtils.close(conn);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
 }
