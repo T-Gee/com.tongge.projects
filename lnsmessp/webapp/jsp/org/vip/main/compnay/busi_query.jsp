@@ -3,7 +3,6 @@
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.BusiapplyEntity"%>
 <script type="text/javascript" src="<%=path%>/scripts/switch.js"></script>
-<div class="clear"></div>
 <div class="current">
   您的位置：
   <a href="<%=path%>/">首页</a>

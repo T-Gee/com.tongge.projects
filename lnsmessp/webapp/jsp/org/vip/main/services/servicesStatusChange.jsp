@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
-<div class="clear"></div>
 <div class="current">您的位置：首页 &gt; 企业会员中心-服务机构状态变更页</div>
 <div class="clear" style="height: 20px;"></div>
 <div class="current2"></div>

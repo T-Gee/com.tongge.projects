@@ -3,7 +3,6 @@
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.UserEntity"%>
 <script type="text/javascript" src="<%=path%>/scripts/switch.js"></script>
-<div class="clear"></div>
 <div class="current">您的位置：首页>会员中心</div>
 <div class="reg_one" style="margin-top: 30px;">
   <script type="text/javascript">

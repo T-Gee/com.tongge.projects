@@ -2,7 +2,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <!--left -->
 <div class="left">
-  <div class="clear"></div>
   <div class="current">当前位置：企业用户注册</div>
   <div class="content_detail">
     <div class="clear" style="height: 20px;"></div>

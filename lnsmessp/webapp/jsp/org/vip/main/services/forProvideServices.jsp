@@ -2,7 +2,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.BusiapplyEntity"%>
-<div class="clear"></div>
 <div class="current">您的位置：首页&gt;会员中心&gt;发布机构信息</div>
 <div class="reg_one" style="margin-top: 30px;">
   <script type="text/javascript">

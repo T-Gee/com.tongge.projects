@@ -2,7 +2,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.BusiapplyEntity"%>
-<div class="clear"></div>
 <div class="current">您的位置：首页 &gt; 会员中心-业务办理--申请服务</div>
 <div class="applica_title" style="margin-bottom: 2px;">申请服务</div>
 <div class="clear"></div>

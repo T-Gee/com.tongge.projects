@@ -2,7 +2,7 @@
 <!--对联-->
 <%@include file="constant.jsp"%>
 <div id="top" style="display: ''">
-  <div id="adv" style="position: absolute; top: 160px; right: 20px; width: 100px; height: 300px;">
+  <div id="adv" style="position: absolute; top: 160px; right: 20px; width: 100px; height: 0px;">
     <!--<div style="position:relative">
           <a href="<%=path%>/jchdzxhd/3362.jhtml" target="_blank"><img src="/r/cms/www/red/img/xmhy.jpg" /></a>
           <a  href="javascript:void(0)" onclick = "document.getElementById('adv').style.display='none';" style="width:20px; height:21px; float:right; position:absolute;top:0; right:0">

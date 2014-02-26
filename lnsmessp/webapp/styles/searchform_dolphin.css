@@ -1,0 +1,39 @@
+/* ============ËÑË÷±íµ¥============== */
+div.globalsearchformzone{
+padding:0px;
+margin:0px;
+height:20px;
+}
+
+
+div.globalsearchformzone div.globalsearchform{
+float:left;
+padding:0px 0px 0px 0px;
+margin:0px;
+height:20px;
+font:12px/18px simsun;
+}
+
+div.globalsearchformzone div.globalsearchform1{
+float:right;
+padding:0px;
+margin:0px;
+line-height:20px;
+}
+
+div.globalsearchformzone div.globalsearchform .input{
+border:0px;
+height:20px;
+line-height:18px;
+padding:0px;
+margin:0px;
+background:#fff;
+border:1px #b7b7b7 solid;
+color:#000;
+width:174px;
+}
+
+div.globalsearchformzone div.globalsearchform1 .imgbutton{
+padding:0px;
+margin:1px 0px 0px 0px;
+}

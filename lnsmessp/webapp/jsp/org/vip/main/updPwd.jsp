@@ -3,7 +3,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <!--left -->
 <div class="left">
-  <div class="clear"></div>
   <div class="current">您的位置：首页 &gt; 企业会员修改密码</div>
   <!----chagne passworld----->
   <div class="clear" style="height: 20px;"></div>

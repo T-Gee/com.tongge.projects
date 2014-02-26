@@ -3,7 +3,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <!--left -->
 <div class="left">
-  <div class="clear"></div>
   <div class="current">
     您的位置：
     <a href="<%=path%>/">首页</a>

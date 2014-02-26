@@ -11,20 +11,20 @@
 <meta content="辽宁中小企业服务平台" name="description" />
 </head>
 <body>
+  <div id="topInformation1" class="topInformation1">
+    <jsp:include page="/jsp/base/topInformation.jsp"></jsp:include>
+  </div>
   <div id='container'>
-    <div id="topInformation1">
-      <jsp:include page="/jsp/base/topInformation.jsp"></jsp:include>
-    </div>
     <div id="warp">
       <jsp:include page="/jsp/base/top.jsp" />
       <jsp:include page="/jsp/base/navigator.jsp" />
-      <div id='content' style='width: 970px; height: 489px; margin: 0px auto'>
+      <div class="path_bg"></div><div id='content'>
         <jsp:include page="/jsp/content/homepage/index.jsp"></jsp:include>
       </div>
-      <div id='bottom' style='width: 970px; height: 127px; background: none transparent scroll repeat 0% 0%'>
-        <jsp:include page="/jsp/base/bottom.jsp" />
-      </div>
     </div>
+  </div>
+  <div id='bottom' style='width: 1000px; height: 127px;'>
+    <jsp:include page="/jsp/base/bottom.jsp" />
   </div>
 </body>
 </html>

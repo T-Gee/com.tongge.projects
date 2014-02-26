@@ -5,8 +5,9 @@
   <script type="text/javascript" src="<%=path%>/component/myfocus/js/myfocus-2.0.1.min.js"></script>
   <style type="text/css">
 #myFocus {
-	width: 655px;
+	width: 650px;
 	height: 245px;
+  margin-left: 2px;
 }
 </style>
   <script type="text/javascript">

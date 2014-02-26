@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@include file="/jsp/base/constant.jsp"%>
-<div class="clear"></div>
 <div class="current">当前位置：个人用户注册</div>
 <div class="content_detail">
   <div class="clear" style="height: 20px;"></div>

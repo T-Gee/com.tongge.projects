@@ -3,7 +3,6 @@
 <%@include file="/jsp/base/constant.jsp"%>
 <%@ page import="java.util.*"%>
 <%@ page import="com.tongge.lnsmessp.entities.ServiceapplyEntity" %>
-<div class="clear"></div>
 <div class="current">您的位置：首页 &gt; 服务机构会员中心-业务办理--业务查询</div>
 <div class="clear" style="height: 20px;"></div>
 <div class="current2"></div>

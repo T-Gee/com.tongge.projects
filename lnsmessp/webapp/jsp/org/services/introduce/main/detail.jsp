@@ -2,7 +2,6 @@
 <%@page import="java.util.*"%>
 <%@include file="/jsp/base/constant.jsp"%>
 <div class="introduce">
-  <div class="clear"></div>
   <div class="current">
     您的位置：
     <a href="<%=path%>">首页</a>
